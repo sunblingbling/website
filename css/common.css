@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+*{
+    margin:0; 
+    padding:0; 
+    font-size: 100%; 
+    font-style: normal;
+}
+html{
+    overflow-y: scroll; 
+    color: #333;
+}
+body{
+    margin: 0; 
+    padding: 0;
+    font-family: "メイリオ","Hiragino Kaku Gothic Pro",Meiryo,"ヒラギノ角ゴ Pro W3","MS PGothic","MS UI Gothic",Helvetica,Arial,sans-serif;
+	-webkit-text-size-adjust: 100%;
+}
+a{
+    outline: none;
+}
+a:link{}
+a:visited{}
+a:hover{
+    opacity: 0.7;
+}
+img{
+    vertical-align: bottom;
+    width: 100%;
+}
+a img{
+    border: none;
+}
+input, label, select, textarea{
+    vertical-align: middle;
+}
+h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd{
+    margin: 0; padding: 0;
+}
+ol, ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+.sp{
+    display: none;
+}
+.pc{
+    display: block;
+}
+
+/*------------------------------------
+header
+------------------------------------*/
+header{
+    width: 100%; 
+    position: relative;
+    padding: 10px 0 25px;
+}
+
+/*------------------------------------
+nav
+------------------------------------*/
+.menu-trigger, .menu-trigger span{
+    display: inline-block; 
+    transition: all .4s; 
+    box-sizing: border-box;
+}
+.menu-trigger{
+    position: fixed; 
+    top: 47.91666666666667%; 
+    right: 2.083333333333333%; 
+    width: 48px; 
+    height: 40px; 
+    z-index: 9999;
+}
+a.menu-trigger:hover{}
+.menu-trigger span{
+    position: absolute; 
+    z-index: 9999; 
+    right: 0; 
+    width: 100%; 
+    height: 6px; 
+    background: #000;
+}
+.menu-trigger span:nth-child(1){
+    top: 0;
+}
+.menu-trigger span:nth-child(2){
+    top:17px; 
+    width: 80%;
+}
+.menu-trigger span:nth-child(3){
+    bottom: 0;
+}
+.menu-trigger.active span:nth-child(1){
+    -webkit-transform: translateY(15px) rotate(-45deg);
+    transform: translateY(15px) rotate(-45deg);
+    background: #fff;
+}
+.menu-trigger.active span:nth-child(2){
+    opacity: 0;
+}
+.menu-trigger.active span:nth-child(3){
+    -webkit-transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-20px) rotate(45deg);
+    background: #fff;
+}
+#nav_wrap{
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: #000;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav_wrap ul{
+    position: absolute;
+    top: 41%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+#nav_wrap ul li{
+    padding-left: 0;
+    list-style-type: none;
+    line-height: 1.666666666666667;
+}
+#nav_wrap ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 3em;
+    letter-spacing: 10px;
+}
+#nav_wrap ul li a:hover{
+    text-decoration: line-through;
+    opacity: 1;
+}
+
+/*------------------------------------
+sns
+------------------------------------*/
+#sns{
+    position: fixed;
+    top: 42.31481481481481%;
+    left: 2.083333333333333%;
+    width: 36px;
+    height: 150px;
+    z-index: 10;
+}
+#sns ul li{
+    position: absolute;
+}
+#sns ul li:nth-child(1){
+    top: 0;
+    left: 1px;
+}
+#sns ul li:nth-child(2){
+    top: 50px;
+    left: 8px;
+}
+#sns ul li:nth-child(3){
+    bottom: 0;
+}
+
+/*------------------------------------
+footer
+------------------------------------*/
+footer{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 21px 0;
+}
+
+/*------------------------------------
+list page 共通
+------------------------------------*/
+.contents{
+    /*width: 1200px;*/
+    width: 62.5%;
+    margin: 0 auto;
+}
+.contents.wrap{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.contents .title{
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 5px;
+    padding: 40px 0 23px;
+}
+.contents .tag{
+    width: 100%;
+    position: relative;
+    padding-bottom: 95px;
+}
+.contents .tag ul li{
+    float: left;
+    text-align: center;
+    border-radius: 100px;
+    color: #000;
+    font-size: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.contents .tag ul li:last-child{
+    margin-right: 0;
+}

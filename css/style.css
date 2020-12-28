@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/*------------------------------------
+main
+------------------------------------*/
+#main.wrap{
+    width: 100%; 
+    max-height: 1080px; 
+    height: 100%; 
+    position: relative; 
+    overflow: hidden;
+}
+#main_contents{
+    max-width: 1500px;
+    width: 78.125%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+#main_contents .main_img{
+    /*height: 995px;*/
+    background: #fff;
+}
+#main_contents .main_sp{
+    display: none;
+}
+
+/*------------------------------------
+Web list 共通
+------------------------------------*/
+.list .tag ul li{
+    width: 126px;
+    height: 34px;;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    font-size: 19px;
+    padding-top: 1px;
+    position: relative;
+    display: block;
+}
+.list .tag ul li.tag_all{
+    padding-top: 2px;
+}
+.contents .tag ul li:hover{
+    color: #fff;
+}
+.contents .tag ul li::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    background: #000;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+    border-radius: 100px;
+}
+.contents .tag ul li:hover::before{
+    transform-origin: left top;
+    transform: scale(1, 1);
+    border-radius: 100px;
+}
+.contents .tag ul li:active{
+    background: #000;
+    color: #fff;
+}
+/*.contents .tag ul li.tag_design{
+    background: #fc7982;
+}
+.contents .tag ul li.tag_cording{
+    background: #3e3e82;
+}
+.contents .tag ul li.tag_direction{
+    background: #56adb5;
+}
+.contents .tag ul li.tag_psd{
+    background: #42b7e8;
+}
+.contents .tag ul li.tag_ai{
+    background: #f78a41;
+}*/
+.contents .list_wrap{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.contents .list_wrap ul li{
+    float: left;
+    width: 31%;
+    margin: 0 1.042% 2% 1.042%;
+}
+
+/*------------------------------------
+Web list page
+------------------------------------*/
+.list .web_tag ul{
+    width: 550px;
+    margin: 0 auto;
+}
+
+/*------------------------------------
+artwork list page
+------------------------------------*/
+.list .artwork_tag ul{
+    width: 435px;
+    margin: 0 auto;
+}
+.list .artwork_tag ul li{
+    width: 135px;
+}
+.list .artwork_list_wrap ul li:nth-child(4){
+    position: absolute;
+    top: 43%;
+}
+
+/*------------------------------------
+detail page 共通
+------------------------------------*/
+.detail .tit_tag_wrap{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 1.2%;
+}
+.detail .title{
+    text-align: left;
+    float: left;
+    padding-right: 2.3%;
+    padding-bottom: 0;
+}
+.detail .tag{
+    padding-top: 60px;
+    padding-bottom: 0;
+}
+.detail .artwork_tag{
+    padding-top: 65px;
+}
+.detail .tag ul li{
+    color: #fff;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: auto;
+    height: 26px;
+    padding-top: 1px;
+}
+.detail .web_tag ul li.design{
+    background: #fc7982;
+}
+.detail .web_tag ul li.cording{
+    background: #3e3e82;
+}
+.detail .web_tag ul li.direction{
+    background: #56adb5;
+}
+.detail .artwork_tag ul li.tag_psd{
+    background: #42b7e8;
+}
+.detail .artwork_tag ul li.tag_ai{
+    background: #f78a41;
+}
+.detail .description{
+    padding-top: 12%;
+}
+.detail .no_gallery_des{
+    padding-top: 8%;
+}
+.detail .description ul{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+.detail .description ul:first-child{
+    border-right: 1px solid #000;
+    padding-right: 3%;
+}
+.detail .description ul:last-child{
+    padding-left: 3%;
+}
+.detail .description ul li.url{
+    word-break: break-all;
+}
+.detail .description ul li{
+    padding-bottom: 8%;
+    line-height: 170%;
+}
+.detail .description ul li.qr{
+    width: 26%;
+    float: right;
+}
+.detail .description ul li span.des_tit{
+    display: block;
+    font-weight: 600;
+    font-size: 1.4em;
+    padding-bottom: 3%;
+}
+.detail .description ul li span.small_txt{
+    display: block;
+    font-size: 0.9em;
+    padding-top: 3%;
+}
+
+/*------------------------------------
+Web detail page
+------------------------------------*/
+.detail .web_tag ul li{
+    width: 94px; 
+}
+
+/*------------------------------------
+Artwork detail page
+------------------------------------*/
+.detail .artwork_tag ul li{
+    width: 100px;   
+}

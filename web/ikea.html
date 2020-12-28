@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.6" name="viewport">
+        <link href="URL" rel="canonical">
+        <meta content="CHOI K.SUN" name="author">
+        <title>Welcome! | CHOI K.SUN</title>
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/flickity.css">
+        <link rel="stylesheet" type="text/css" href="../css/resize.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../js/flickity.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('.menu-trigger').on('click',function(){
+                    $(this).toggleClass('active');
+                    $("#nav_wrap").fadeToggle();
+                    return false;
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-- web list page -->
+        <div class="wrap" id="web_list">
+
+            <!-- header -->
+            <header id="header">
+                <div class="logo pc"><a href="../index.html"><img src="../img/logo_pc.png" alt="logo"></a></div>
+                <div class="logo sp"><a href="../index.html"><img src="../img/logo_sp.png" alt="logo"></a></div>
+            </header>
+            <!-- header -->
+
+            <!-- nav -->
+            <nav id="nav_wrap">
+                <ul>
+                    <li><a href="../web.html">WEB</a></li>
+                    <li><a href="../artwork.html">ARTWORK</a></li>
+                </ul>
+            </nav>
+            <a class="menu-trigger" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <!-- nav -->
+
+            <!-- contents -->
+            <div class="contents detail">
+                <div class="wrap">
+                    <div class="tit_tag_wrap">
+                        <div class="title">IKEA</div>
+                        <div class="tag web_tag">
+                            <ul>
+                                <li class="design">Design</li>
+                                <li class="cording">Cording</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="gallery">
+                        <ul class="js-flickity">
+                            <li class="gallery-cell"><a href="../img/web/ikea.jpg"><img src="../img/web/ikea.jpg" alt="ikea mockup"></a></li>
+                            <li class="gallery-cell"><a href="../img/web/ikea_page.jpg"><img src="../img/web/ikea_slide.jpg" alt="ikea web page"></a></li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <ul>
+                            <li><span class="des_tit">概要</span>
+                                ポートフォリオ用に制作した習作。<br>IKEAのロゴの色をメインカラーとして選定。<br>
+                                当時韓国でIKEAの家具に興味を持ってるのは若い人だったため、落ち着いてる雰囲気より明るく見える方がいいと思い、それを意識しながら作業。<br>
+                                デザインからコーディングまで、全て自分で実施。
+                                <span class="small_txt">※メインページのみリニューアル</span>
+                            </li>
+                            <li class="url"><span class="des_tit">URL</span>
+                                <a href="http://test007.members-dev.com/mc00262/ikea/" target="_blank">http://test007.members-dev.com/mc00262/ikea/</a></li>
+                        </ul>
+                        <ul>
+                            <li><span class="des_tit">主な使用技術</span>
+                                HTML、CSS、Photoshop、Illustrator</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- contents -->
+
+            <!-- sns -->
+            <div id="sns">
+                <ul>
+                    <li><a href="#" target="_blank"><img src="../img/sns_twt.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.facebook.com/sbb.in.jp" target="_blank"><img src="../img/sns_fb.png" alt="Facebook"></a></li>
+                    <li><a href="#" target="_blank"><img src="../img/sns_insta.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <!-- sns -->
+
+            <!-- footer -->
+            <footer></footer>
+            <!-- footer -->
+        </div>
+    </body>
+</html>
