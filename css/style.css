@@ -87,24 +87,32 @@ Web list 共通
     overflow: hidden;
     position: relative;
 }
+.contents .list_wrap ul{
+    display: flex;
+    flex-wrap: wrap;
+}
 .contents .list_wrap ul li{
+    width: 50%;
+}
+/* .contents .list_wrap ul li{
     float: left;
     width: 31%;
     margin: 0 1.042% 2% 1.042%;
-}
+    width: 50%;
+} */
 
 /*------------------------------------
 Web list page
 ------------------------------------*/
-.list .web_tag ul{
+/* .list .web_tag ul{
     width: 550px;
     margin: 0 auto;
-}
+} */
 
 /*------------------------------------
 artwork list page
 ------------------------------------*/
-.list .artwork_tag ul{
+/* .list .artwork_tag ul{
     width: 435px;
     margin: 0 auto;
 }
@@ -114,7 +122,7 @@ artwork list page
 .list .artwork_list_wrap ul li:nth-child(4){
     position: absolute;
     top: 43%;
-}
+} */
 
 /*------------------------------------
 detail page 共通
