@@ -92,7 +92,11 @@ Web list 共通
     flex-wrap: wrap;
 }
 .contents.web .list_wrap ul li{
-    width: 50%;
+    width: 49%;
+    margin: 0 2% 2% 0;
+}
+.contents.web .list_wrap ul li:nth-child(2n){
+    margin-right: 0;
 }
 .contents.artwork .list_wrap ul li{
     float: left;
