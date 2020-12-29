@@ -28,7 +28,7 @@ main
 /*------------------------------------
 Web list 共通
 ------------------------------------*/
-.list .tag ul li{
+/* .list .tag ul li{
     width: 126px;
     height: 34px;;
     box-sizing: border-box;
@@ -67,7 +67,7 @@ Web list 共通
     background: #000;
     color: #fff;
 }
-/*.contents .tag ul li.tag_design{
+.contents .tag ul li.tag_design{
     background: #fc7982;
 }
 .contents .tag ul li.tag_cording{
