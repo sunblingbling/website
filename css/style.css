@@ -63,24 +63,29 @@ list 共通
     transform: scale(1, 1);
     border-radius: 100px;
 }
-.contents .tag ul li:active{
+/* .contents .tag ul li:active{
     background: #000;
     color: #fff;
-}
-.contents .tag ul li.tag_design{
+} */
+.contents .tag ul li.tag_design:hover::before{
     background: #fc7982;
+    color: #fff;
 }
-.contents .tag ul li.tag_cording{
+.contents .tag ul li.tag_cording:hover::before{
     background: #3e3e82;
+    color: #fff;
 }
-.contents .tag ul li.tag_direction{
+.contents .tag ul li.tag_direction:hover::before{
     background: #56adb5;
+    color: #fff;
 }
-.contents .tag ul li.tag_psd{
+.contents .tag ul li.tag_psd:hover::before{
     background: #42b7e8;
+    color: #fff;
 }
-.contents .tag ul li.tag_ai{
+.contents .tag ul li.tag_ai:hover::before{
     background: #f78a41;
+    color: #fff;
 }
 .contents .list_wrap{
     width: 100%;
@@ -96,7 +101,7 @@ list 共通
     position: relative;
 }
 .list_link img{
-    display: block;
+    display: inline-block;
     width: 100%;
     height: auto;
 }
