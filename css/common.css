@@ -150,23 +150,14 @@ sns
     position: fixed;
     top: 42.31481481481481%;
     left: 2.083333333333333%;
-    width: 36px;
-    height: 150px;
+    width: 32px;
     z-index: 10;
 }
-#sns ul li{
-    position: absolute;
-}
-#sns ul li:nth-child(1){
-    top: 0;
-    left: 1px;
-}
-#sns ul li:nth-child(2){
-    top: 50px;
-    left: 8px;
-}
-#sns ul li:nth-child(3){
-    bottom: 0;
+#sns ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*------------------------------------
