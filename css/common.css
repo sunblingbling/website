@@ -70,7 +70,7 @@ nav
 .menu-trigger{
     position: fixed; 
     top: 47.91666666666667%; 
-    right: 2; 
+    right: 2%; 
     width: 42px; 
     height: 34px; 
     z-index: 9999;
