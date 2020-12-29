@@ -70,7 +70,7 @@ nav
 .menu-trigger{
     position: fixed; 
     top: 47.91666666666667%; 
-    right: 2.083333333333333%; 
+    right: 2; 
     width: 42px; 
     height: 34px; 
     z-index: 9999;
@@ -148,7 +148,7 @@ sns
 #sns{
     position: fixed;
     top: 42.31481481481481%;
-    left: 2.083333333333333%;
+    left: 2;
     width: 32px;
     z-index: 10;
 }
@@ -174,7 +174,7 @@ list page 共通
 ------------------------------------*/
 .contents{
     /*width: 1200px;*/
-    width: 62.5%;
+    width: 78%;
     margin: 0 auto;
 }
 .contents.wrap{
