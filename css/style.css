@@ -95,6 +95,11 @@ list 共通
 .list_link{
     position: relative;
 }
+.list_link img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .overlay {
     position: absolute;
     top: 0;
