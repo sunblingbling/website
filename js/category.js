@@ -1,5 +1,5 @@
 var $filters = $('.filter [data-filter]'),
-    $boxes = $('.list_wrap [data-category]');
+    $boxes = $('.mockup_list [data-category]');
 
 $filters.on('click', function(e) {
   e.preventDefault();
