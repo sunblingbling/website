@@ -158,6 +158,12 @@ sns
     justify-content: center;
     align-items: center;
 }
+#sns ul li{
+    margin-bottom: 10px;
+}
+#sns ul li:last-child{
+    margin-bottom: 0;
+}
 
 /*------------------------------------
 footer
