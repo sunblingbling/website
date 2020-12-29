@@ -29,7 +29,8 @@ main
 list 共通
 ------------------------------------*/
 /* filter tag */
-.list .tag ul li{
+.list .tag{display: flex;}
+.list .tag a{
     width: 126px;
     height: 34px;;
     box-sizing: border-box;
@@ -39,7 +40,19 @@ list 共通
     position: relative;
     display: block;
 }
-.list .tag ul li.tag_all{
+.list .tag a.active:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 0;
+    border-color: #333 transparent transparent transparent;
+}
+.list .tag .tag_all{
     padding-top: 2px;
 }
 .contents .tag ul li:hover{
@@ -84,22 +97,6 @@ list 共通
     background: #f78a41;
     color: #fff;
 }
-.filter a {
-    position: relative;
-}
-  
-.filter a.active:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 15px 15px 0 0;
-    border-color: #333 transparent transparent transparent;
-}
 @keyframes zoom-in {
     0% {
      transform: scale(.1);
@@ -130,38 +127,6 @@ list 共通
     float: left;
     width: 31%;
     margin: 0 1.042% 2% 1.042%;
-}
-.list_link{
-    position: relative;
-}
-.list_link img{
-    display: inline-block;
-    width: 100%;
-    height: auto;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-}
-.list_link:hover .overlay {opacity: 1;}
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 /*------------------------------------
