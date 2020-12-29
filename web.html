@@ -6,9 +6,9 @@
         <link href="URL" rel="canonical">
         <meta content="CHOI K.SUN" name="author">
         <title>Welcome! | CHOI K.SUN</title>
-        <link rel="stylesheet" type="text/css" href="css/common.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/resize.css">
+        <link rel="stylesheet" type="text/css" href="common/css/common.css">
+        <link rel="stylesheet" type="text/css" href="common/css/style.css">
+        <link rel="stylesheet" type="text/css" href="common/css/resize.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(function(){
@@ -26,63 +26,42 @@
         <div class="wrap" id="web_list">
 
             <!-- header -->
-            <header id="header">
-                <div class="logo pc"><a href="index.html"><img src="img/logo_pc.png" alt="logo"></a></div>
-                <div class="logo sp"><a href="index.html"><img src="img/logo_sp.png" alt="logo"></a></div>
-            </header>
+            <!--#include file="common/ssi/header.html" -->
             <!-- header -->
 
             <!-- nav -->
-            <nav id="nav_wrap">
-                <ul>
-                    <li><a href="#">WEB</a></li>
-                    <li><a href="artwork.html">ARTWORK</a></li>
-                </ul>
-            </nav>
-            <a class="menu-trigger" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
+            <!--#include file="common/ssi/nav.html" -->
             <!-- nav -->
 
             <!-- contents -->
             <div class="contents list">
                 <div class="wrap">
                     <div class="title">WEB</div>
-                    <div class="tag web_tag">
-                        <ul>
-                            <li class="tag_all">All</li>
-                            <li class="tag_design">Design</li>
-                            <li class="tag_cording">Cording</li>
-                            <li class="tag_direction">Direction</li>
-                        </ul>
-                    </div>
                     <div class="list_wrap">
                         <ul>
-                            <li class="design cording"><a href="web/ikea.html"><img src="img/web/ikea.jpg" alt="IKEA mockup"></a></li>
-                            <li class="design cording"><a href="web/doosan.html"><img src="img/web/doosan.jpg" alt="DOOSAN mockup"></a></li>
-                            <li class="design cording"><a href="web/wine.html"><img src="img/web/wine.jpg" alt="WINE mockup"></a></li>
-                            <li class="design"><a href="web/e30.html"><img src="img/web/E30.jpg" alt="E30 mockup"></a></li>
-                            <li class="design cording"><a href="web/ph_water.html"><img src="img/web/ph_water.jpg" alt="Phohang water mockup"></a></li>
-                            <li class="design cording"><a href="web/gidok_hospital.html"><img src="img/web/gidok_hospital.jpg" alt="Gidok hospital mockup"></a></li>
-                            <li class="design cording"><a href="web/gidok_funeral.html"><img src="img/web/gidok_hospital_2.jpg" alt="Gidok hospital mockup"></a></li>
-                            <li class="design cording"><a href="web/ph_research.html"><img src="img/web/ph_research.jpg" alt="Phohang research mockup"></a></li>
-                            <li class="design cording"><a href="web/gw_school.html"><img src="img/web/gw_school.jpg" alt="Gwangyang school mockup"></a></li>
-                            <li class="design cording"><a href="web/samil.html"><img src="img/web/samil.jpg" alt="Samil mockup"></a></li>
-                            <li class="design"><a href="web/poma.html"><img src="img/web/poma.jpg" alt="POMA mockup"></a></li>
-                            <li class="design cording"><a href="web/phuniv_intro.html"><img src="img/web/phuniv_intro.jpg" alt="Phohang university intro mockup"></a></li>
-                            <li class="design cording"><a href="web/satec.html"><img src="img/web/satec.jpg" alt="SATEC program mockup"></a></li>
-                            <li class="design direction"><a href="web/pr_movie.html"><img src="img/web/water_pr.jpg" alt="Phohang water pr movie mockup"></a></li>
-                            <li class="design"><a href="web/welltokk.html"><img src="img/web/welltokk.jpg" alt="WELLTOKK mockup"></a></li>
-                            <li class="design direction"><a href="web/showabus_lp.html"><img src="img/web/showabus_lp.jpg" alt="Showa tour bus LP mockup"></a></li>
-                            <li class="design direction"><a href="web/spritpact2.html"><img src="img/web/spritpact2.jpg" alt="anime Spritpact2 mockup"></a></li>
-                            <li class="design direction"><a href="web/aquapark_sakura.html"><img src="img/web/aquapark_sakura.jpg" alt="Aquapark shinagawa sakura mockup"></a></li>
-                            <li class="design direction"><a href="web/aquapark_hanabi.html"><img src="img/web/aquapark_hanabi.jpg" alt="Aquapark shinagawa hanabi mockup"></a></li>
-                            <li class="design direction"><a href="web/aquapark_halloween.html"><img src="img/web/aquapark_halloween.jpg" alt="Aquapark shinagawa halloween mockup"></a></li>
-                            <li class="direction"><a href="web/hetalia.html"><img src="img/web/hetalia.jpg" alt="musical Hetalia mockup"></a></li>
-                            <li class="design direction"><a href="web/gsr.html"><img src="img/web/gsr.jpg" alt="Goodsmileracing mockup"></a></li>
-                            <li class="design direction"><a href="web/question_app.html"><img src="img/web/question_app.jpg" alt="app mockup"></a></li>
+                            <li class="design cording"><a href="web/ikea.html"><img src="common/img/web/ikea.jpg" alt="IKEA mockup"></a></li>
+                            <li class="design cording"><a href="web/doosan.html"><img src="common/img/web/doosan.jpg" alt="DOOSAN mockup"></a></li>
+                            <li class="design cording"><a href="web/wine.html"><img src="common/img/web/wine.jpg" alt="WINE mockup"></a></li>
+                            <li class="design"><a href="web/e30.html"><img src="common/img/web/e30.jpg" alt="E30 mockup"></a></li>
+                            <li class="design cording"><a href="web/ph_water.html"><img src="common/img/web/ph_water.jpg" alt="Phohang water mockup"></a></li>
+                            <li class="design cording"><a href="web/gidok_hospital.html"><img src="common/img/web/gidok_hospital.jpg" alt="Gidok hospital mockup"></a></li>
+                            <li class="design cording"><a href="web/gidok_funeral.html"><img src="common/img/web/gidok_hospital_2.jpg" alt="Gidok hospital mockup"></a></li>
+                            <li class="design cording"><a href="web/ph_research.html"><img src="common/img/web/ph_research.jpg" alt="Phohang research mockup"></a></li>
+                            <li class="design cording"><a href="web/gw_school.html"><img src="common/img/web/gw_school.jpg" alt="Gwangyang school mockup"></a></li>
+                            <li class="design cording"><a href="web/samil.html"><img src="common/img/web/samil.jpg" alt="Samil mockup"></a></li>
+                            <li class="design"><a href="web/poma.html"><img src="common/img/web/poma.jpg" alt="POMA mockup"></a></li>
+                            <li class="design cording"><a href="web/phuniv_intro.html"><img src="common/img/web/phuniv_intro.jpg" alt="Phohang university intro mockup"></a></li>
+                            <li class="design cording"><a href="web/satec.html"><img src="common/img/web/satec.jpg" alt="SATEC program mockup"></a></li>
+                            <li class="design direction"><a href="web/pr_movie.html"><img src="common/img/web/water_pr.jpg" alt="Phohang water pr movie mockup"></a></li>
+                            <li class="design"><a href="web/welltokk.html"><img src="common/img/web/welltokk.jpg" alt="WELLTOKK mockup"></a></li>
+                            <li class="design direction"><a href="web/showabus_lp.html"><img src="common/img/web/showabus_lp.jpg" alt="Showa tour bus LP mockup"></a></li>
+                            <li class="design direction"><a href="web/spritpact2.html"><img src="common/img/web/spritpact2.jpg" alt="anime Spritpact2 mockup"></a></li>
+                            <li class="design direction"><a href="web/aquapark_sakura.html"><img src="common/img/web/aquapark_sakura.jpg" alt="Aquapark shinagawa sakura mockup"></a></li>
+                            <li class="design direction"><a href="web/aquapark_hanabi.html"><img src="common/img/web/aquapark_hanabi.jpg" alt="Aquapark shinagawa hanabi mockup"></a></li>
+                            <li class="design direction"><a href="web/aquapark_halloween.html"><img src="common/img/web/aquapark_halloween.jpg" alt="Aquapark shinagawa halloween mockup"></a></li>
+                            <li class="direction"><a href="web/hetalia.html"><img src="common/img/web/hetalia.jpg" alt="musical Hetalia mockup"></a></li>
+                            <li class="design direction"><a href="web/gsr.html"><img src="common/img/web/gsr.jpg" alt="Goodsmileracing mockup"></a></li>
+                            <li class="design direction"><a href="web/question_app.html"><img src="common/img/web/question_app.jpg" alt="app mockup"></a></li>
                         </ul>                        
                     </div>
                 </div>
@@ -90,13 +69,7 @@
             <!-- contents -->
 
             <!-- sns -->
-            <div id="sns" class="display_none">
-                <ul>
-                    <li><a href="#" target="_blank"><img src="img/sns_twt.png" alt="Twitter"></a></li>
-                    <li><a href="https://www.facebook.com/sbb.in.jp" target="_blank"><img src="img/sns_fb.png" alt="Facebook"></a></li>
-                    <li><a href="#" target="_blank"><img src="img/sns_insta.png" alt="Instagram"></a></li>
-                </ul>
-            </div>
+            <!--#include file="common/ssi/sns.html" -->
             <!-- sns -->
 
             <!-- footer -->
