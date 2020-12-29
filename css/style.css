@@ -26,7 +26,7 @@ main
 }
 
 /*------------------------------------
-Web list 共通
+list 共通
 ------------------------------------*/
 .list .tag ul li{
     width: 126px;
@@ -67,7 +67,7 @@ Web list 共通
     background: #000;
     color: #fff;
 }
-/*.contents .tag ul li.tag_design{
+.contents .tag ul li.tag_design{
     background: #fc7982;
 }
 .contents .tag ul li.tag_cording{
@@ -81,7 +81,7 @@ Web list 共通
 }
 .contents .tag ul li.tag_ai{
     background: #f78a41;
-}*/
+}
 .contents .list_wrap{
     width: 100%;
     overflow: hidden;
@@ -91,6 +91,30 @@ Web list 共通
     float: left;
     width: 31%;
     margin: 0 1.042% 2% 1.042%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+.container:hover .overlay {opacity: 1;}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /*------------------------------------
