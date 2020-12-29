@@ -87,19 +87,19 @@ Web list 共通
     overflow: hidden;
     position: relative;
 }
-.contents .list_wrap ul{
+.contents.web .list_wrap ul{
     display: flex;
     flex-wrap: wrap;
 }
-.contents .list_wrap ul li{
+.contents.web .list_wrap ul li{
     width: 50%;
 }
-/* .contents .list_wrap ul li{
+.contents.artwork .list_wrap ul li{
     float: left;
     width: 31%;
     margin: 0 1.042% 2% 1.042%;
     width: 50%;
-} */
+}
 
 /*------------------------------------
 Web list page
