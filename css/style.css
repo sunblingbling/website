@@ -26,11 +26,9 @@ main
 }
 
 /*------------------------------------
-list 共通
+Web list 共通
 ------------------------------------*/
-/* filter tag */
-.list .tag{display: flex;}
-.list .tag a{
+.list .tag ul li{
     width: 126px;
     height: 34px;;
     box-sizing: border-box;
@@ -40,19 +38,7 @@ list 共通
     position: relative;
     display: block;
 }
-.list .tag a.active:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 15px 15px 0 0;
-    border-color: #333 transparent transparent transparent;
-}
-.list .tag .tag_all{
+.list .tag ul li.tag_all{
     padding-top: 2px;
 }
 .contents .tag ul li:hover{
@@ -77,47 +63,25 @@ list 共通
     transform: scale(1, 1);
     border-radius: 100px;
 }
-.contents .tag ul li.tag_design:hover::before{
+.contents .tag ul li:active{
+    background: #000;
+    color: #fff;
+}
+/*.contents .tag ul li.tag_design{
     background: #fc7982;
-    color: #fff;
 }
-.contents .tag ul li.tag_cording:hover::before{
+.contents .tag ul li.tag_cording{
     background: #3e3e82;
-    color: #fff;
 }
-.contents .tag ul li.tag_direction:hover::before{
+.contents .tag ul li.tag_direction{
     background: #56adb5;
-    color: #fff;
 }
-.contents .tag ul li.tag_psd:hover::before{
+.contents .tag ul li.tag_psd{
     background: #42b7e8;
-    color: #fff;
 }
-.contents .tag ul li.tag_ai:hover::before{
+.contents .tag ul li.tag_ai{
     background: #f78a41;
-    color: #fff;
-}
-@keyframes zoom-in {
-    0% {
-     transform: scale(.1);
-    }
-    100% {
-      transform: none;
-    }
-}
-@keyframes rotate-right {
-    0% {
-      transform: translate(-100%) rotate(-100deg);
-    }
-    100% {
-      transform: none;
-    }
-}
-.is-animated {
-    animation: .6s zoom-in;
-    // animation: .6s rotate-right; 
-}
-/* list */
+}*/
 .contents .list_wrap{
     width: 100%;
     overflow: hidden;

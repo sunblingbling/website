@@ -10,7 +10,6 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/resize.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/category.js"></script>
         <script type="text/javascript">
             $(function(){
                 $('.menu-trigger').on('click',function(){
@@ -52,17 +51,16 @@
                 <div class="wrap">
                     <div class="title">WEB</div>
                     <div class="tag web_tag">
-                        <a class="all active" data-filter="all" href="#" role="button">All</a>
-                        <a class="design" data-filter="design" href="#" role="button">Design</a>
-                        <a class="cording" data-filter="cording" href="#" role="button">Cording</a>
-                        <a class="direction" data-filter="direction" href="#" role="button">Direction</a>
-                        <a class="operation" data-filter="operation" href="#" role="button">Operation</a>
+                        <ul>
+                            <li class="tag_all">All</li>
+                            <li class="tag_design">Design</li>
+                            <li class="tag_cording">Cording</li>
+                            <li class="tag_direction">Direction</li>
+                        </ul>
                     </div>
                     <div class="list_wrap">
-                        <a href="web/ikea.html" class="design cording" data-category="design">
-                            <img src="img/web/ikea.jpg" alt="IKEA mockup">
-                        </a>
                         <ul>
+                            <li class="design cording"><a href="web/ikea.html"><img src="img/web/ikea.jpg" alt="IKEA mockup"></a></li>
                             <li class="design cording"><a href="web/doosan.html"><img src="img/web/doosan.jpg" alt="DOOSAN mockup"></a></li>
                             <li class="design cording"><a href="web/wine.html"><img src="img/web/wine.jpg" alt="WINE mockup"></a></li>
                             <li class="design"><a href="web/e30.html"><img src="img/web/E30.jpg" alt="E30 mockup"></a></li>
