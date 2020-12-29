@@ -92,6 +92,9 @@ list 共通
     width: 31%;
     margin: 0 1.042% 2% 1.042%;
 }
+.list_link{
+    position: relative;
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -104,7 +107,7 @@ list 共通
     transition: .5s ease;
     background-color: #008CBA;
 }
-.container:hover .overlay {opacity: 1;}
+.list_link:hover .overlay {opacity: 1;}
 .text {
     color: white;
     font-size: 20px;
