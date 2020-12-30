@@ -108,7 +108,7 @@ Web list 共通
 	z-index:0;
 }
 .item .item-hover:hover .line {
-    width:30%;
+    width:40%;
 }
 .item .item-hover:hover {
 	opacity:1;
