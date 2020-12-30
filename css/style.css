@@ -46,8 +46,7 @@ Web list 共通
 }
 .item {
 	text-align: center;
-    position: relative;
-    margin: 0 2% 2% 0;			
+    position: relative;			
 }
 .item-hover,.item-hover .mask,.item-img,.item-info {
 	width: 480px;
@@ -99,7 +98,7 @@ Web list 共通
     padding: 0px 10px;
 }
 .item .item-info .catergory span + span{
-    margin-right: 6px;
+    margin-left: 6px;
 }
 .item .item-hover .mask {
 	background-color:#000;
@@ -115,7 +114,6 @@ Web list 共通
 	opacity:1;
 }											
 .item-img {			
-	background-color:#7a548f;
 	z-index:0;			
 }	
 
@@ -123,8 +121,9 @@ Web list 共通
 Web list page
 ------------------------------------*/
 .contents.web .list_wrap .item{
-    width: 480px;
-    height: 320px;
+    width: 470px;
+    height: 313px;
+    margin: 0 20px 20px 0;
 }
 .contents.web .list_wrap .item:nth-child(2n){
     margin-right: 0;
@@ -135,6 +134,7 @@ artwork list page
 ------------------------------------*/
 .contents.artwork .list_wrap .item{
     width: 32%;
+    margin: 0 2% 2% 0;
 }
 .contents.artwork .list_wrap .item:nth-child(3n){
     margin-right: 0;
