@@ -135,13 +135,16 @@ Web list page
 artwork list page
 ------------------------------------*/
 .contents.artwork .list_wrap .item{
-    width: 310px;
     margin: 0 15px 30px 0;
 }
 .contents.artwork .list_wrap .item:nth-child(3n){
     margin-right: 0;
 }
-.contents.artwork .item-hover,.item-hover .mask,.item-img,.item-info {
+.contents.artwork .list_wrap .item,
+.contents.artwork .list_wrap .item-hover,
+.contents.artwork .list_wrap .item-hover .mask,
+.contents.artwork .list_wrap .item-img,
+.contents.artwork .list_wrap .item-info {
 	width: 310px;					
 }
 .contents.artwork .list_wrap .item:nth-child(1),
