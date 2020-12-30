@@ -79,12 +79,12 @@ Web list 共通
 	z-index:5;								 					
 }
 .item .item-info .headline {
-	font-size:20px;			
+	font-size:28px;			
 }
 .item .item-info .line {
     height:1px;
     width:0%;
-    margin:15px auto;
+    margin:8px auto 20px;
     background-color:#ffffff;
    -webkit-transition: all 500ms ease-out;
    -moz-transition: all 500ms ease-out;
@@ -92,7 +92,14 @@ Web list 共通
    transition: all 500ms ease-out;					 
 }
 .item .item-info .catergory {
-	font-size:12px;
+	font-size:14px;
+}
+.item .item-info .catergory span{
+    border: 1px solid #fff;
+    padding: 0px 10px;
+}
+.item .item-info .catergory span + span{
+    margin-right: 6px;
 }
 .item .item-hover .mask {
 	background-color:#000;
@@ -102,7 +109,7 @@ Web list 共通
 	z-index:0;
 }
 .item .item-hover:hover .line {
-    width:40%;
+    width:30%;
 }
 .item .item-hover:hover {
 	opacity:1;
