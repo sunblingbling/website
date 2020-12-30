@@ -12,7 +12,7 @@ main
 }
 #main_contents{
     max-width: 1500px;
-    width: 78%;
+    width: 80%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -23,6 +23,13 @@ main
 }
 #main_contents .main_sp{
     display: none;
+}
+
+/*------------------------------------
+共通
+------------------------------------*/
+.contents{
+    width: 960%;
 }
 
 /*------------------------------------
@@ -42,10 +49,10 @@ Web list 共通
     position: relative;
     margin: 0 2% 2% 0;			
 }
-/* .item,.item-hover,.item-hover .mask,.item-img,.item-info {
-	width: 300px;
-	height: 225px;						
-} */
+.item-hover,.item-hover .mask,.item-img,.item-info {
+	width: 480px;
+	height: 320px;						
+}
 .item-hover,.item-hover .mask,.item-img { 
 	position:absolute;
 	top:0;
@@ -121,7 +128,8 @@ Web list 共通
 Web list page
 ------------------------------------*/
 .contents.web .list_wrap .item{
-    width: 49%;
+    width: 480px;
+    height: 320px;
 }
 .contents.web .list_wrap .item:nth-child(2n){
     margin-right: 0;
