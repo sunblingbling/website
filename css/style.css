@@ -48,10 +48,6 @@ Web list 共通
 	text-align: center;
     position: relative;			
 }
-.item-hover,.item-hover .mask,.item-img,.item-info {
-	width: 480px;
-	height: 320px;						
-}
 .item-hover,.item-hover .mask,.item-img { 
 	position:absolute;
 	top:0;
@@ -128,16 +124,65 @@ Web list page
 .contents.web .list_wrap .item:nth-child(2n){
     margin-right: 0;
 }
+.contents.web .item-hover,.item-hover .mask,.item-img,.item-info {
+	width: 480px;
+	height: 320px;						
+}
 
 /*------------------------------------
 artwork list page
 ------------------------------------*/
 .contents.artwork .list_wrap .item{
-    width: 32%;
-    margin: 0 2% 2% 0;
+    width: 310px;
+    margin: 0 15px 15px 0;
 }
 .contents.artwork .list_wrap .item:nth-child(3n){
     margin-right: 0;
+}
+.contents.artwork .item-hover,.item-hover .mask,.item-img,.item-info {
+	width: 310px;					
+}
+.contents.artwork .list_wrap .item:nth-child(1),
+.contents.artwork .list_wrap .item:nth-child(1) .item-hover,
+.contents.artwork .list_wrap .item:nth-child(1).item-hover .mask,
+.contents.artwork .list_wrap .item:nth-child(1) .item-img,
+.contents.artwork .list_wrap .item:nth-child(1) .item-info{
+    height: 232px;
+}
+.contents.artwork .list_wrap .item:nth-child(2),
+.contents.artwork .list_wrap .item:nth-child(2) .item-hover,
+.contents.artwork .list_wrap .item:nth-child(2).item-hover .mask,
+.contents.artwork .list_wrap .item:nth-child(2) .item-img,
+.contents.artwork .list_wrap .item:nth-child(2) .item-info{
+    height: 205px;
+}
+.contents.artwork .list_wrap .item:nth-child(3),
+.contents.artwork .list_wrap .item:nth-child(3) .item-hover,
+.contents.artwork .list_wrap .item:nth-child(3).item-hover .mask,
+.contents.artwork .list_wrap .item:nth-child(3) .item-img,
+.contents.artwork .list_wrap .item:nth-child(3) .item-info{
+    height: 206px;
+}
+.contents.artwork .list_wrap .item:nth-child(4),
+.contents.artwork .list_wrap .item:nth-child(4) .item-hover,
+.contents.artwork .list_wrap .item:nth-child(4).item-hover .mask,
+.contents.artwork .list_wrap .item:nth-child(4) .item-img,
+.contents.artwork .list_wrap .item:nth-child(4) .item-info{
+    height: 242px;
+}
+.contents.artwork .list_wrap .item:nth-child(5),
+.contents.artwork .list_wrap .item:nth-child(5) .item-hover,
+.contents.artwork .list_wrap .item:nth-child(5).item-hover .mask,
+.contents.artwork .list_wrap .item:nth-child(5) .item-img,
+.contents.artwork .list_wrap .item:nth-child(5) .item-info{
+    height: 360px;
+}
+.contents.artwork .list_wrap .item:nth-child(6),
+.contents.artwork .list_wrap .item:nth-child(6) .item-hover,
+.contents.artwork .list_wrap .item:nth-child(6).item-hover .mask,
+.contents.artwork .list_wrap .item:nth-child(6) .item-img,
+.contents.artwork .list_wrap .item:nth-child(6) .item-info{
+    height: 263px;
 }
 
 /*------------------------------------
