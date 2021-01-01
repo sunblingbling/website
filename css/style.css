@@ -236,6 +236,8 @@ detail page 共通
     background: #f78a41;
 } */
 .detail .description{
+    width: 100%;
+    overflow: hidden;
     padding-top: 12%;
 }
 .detail .no_gallery_des{
