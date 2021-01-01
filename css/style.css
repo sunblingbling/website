@@ -246,7 +246,7 @@ detail page 共通
 }
 .detail .description ul{
     box-sizing: border-box;
-    float: left;
+    width: 50%;
 }
 .detail .description ul:first-child{
     border-right: 1px solid #000;
