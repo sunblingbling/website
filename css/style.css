@@ -239,12 +239,12 @@ detail page 共通
     width: 100%;
     overflow: hidden;
     padding-top: 12%;
+    display: flex;
 }
 .detail .no_gallery_des{
     padding-top: 8%;
 }
 .detail .description ul{
-    width: 50%;
     box-sizing: border-box;
     float: left;
 }
@@ -278,10 +278,14 @@ detail page 共通
     padding-top: 3%;
 }
 .detail .tag{
-    display: block;
+    display: inline-block;
     color: #fff;
     font-size: 16px;
-    height: 26px;
+    width: fit-content;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding: 0 10px;
 }
 .detail .tag + .tag{
     margin-left: 10px;
