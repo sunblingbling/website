@@ -205,7 +205,7 @@ detail page 共通
     padding-right: 2.3%;
     padding-bottom: 0;
 }
-.detail .tag{
+/* .detail .tag{
     padding-top: 60px;
     padding-bottom: 0;
 }
@@ -234,7 +234,7 @@ detail page 共通
 }
 .detail .artwork_tag ul li.tag_ai{
     background: #f78a41;
-}
+} */
 .detail .description{
     padding-top: 12%;
 }
@@ -275,9 +275,32 @@ detail page 共通
     font-size: 0.9em;
     padding-top: 3%;
 }
-.website_link.disable{
-    color: #9e9e9e;
-    text-decoration: line-through;
+.detail .description .tag{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    height: 26px;
+}
+.detail .description .tag + .tag{
+    margin-left: 10px;
+}
+.detail .description .tag.design{
+    background: #fc7982;
+}
+.detail .description .tag.cording{
+    background: #3e3e82;
+}
+.detail .description .tag.direction{
+    background: #56adb5;
+}
+.detail .description .tag.operation{
+    background: #535353;
+}
+.detail .description .tag.psd{
+    background: #42b7e8;
+}
+.detail .description .tag.ai{
+    background: #f78a41;
 }
 
 /*------------------------------------
