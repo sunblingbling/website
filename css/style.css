@@ -277,31 +277,31 @@ detail page 共通
     font-size: 0.9em;
     padding-top: 3%;
 }
-.detail .description .tag{
+.detail .tag{
     display: block;
     color: #fff;
     font-size: 16px;
     height: 26px;
 }
-.detail .description .tag + .tag{
+.detail .tag + .tag{
     margin-left: 10px;
 }
-.detail .description .tag.design{
+.detail .tag.design{
     background: #fc7982;
 }
-.detail .description .tag.cording{
+.detail .tag.cording{
     background: #3e3e82;
 }
-.detail .description .tag.direction{
+.detail .tag.direction{
     background: #56adb5;
 }
-.detail .description .tag.operation{
+.detail .tag.operation{
     background: #535353;
 }
-.detail .description .tag.psd{
+.detail .tag.psd{
     background: #42b7e8;
 }
-.detail .description .tag.ai{
+.detail .tag.ai{
     background: #f78a41;
 }
 
