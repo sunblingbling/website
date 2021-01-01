@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>IKEA</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="jquery-1.11.3.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#top_icon img').hover(function () {
+                $(this).attr('src','img/quick_top_h.png');
+            }, function () {
+                $(this).attr('src', 'img/quick_top.png');
+            });
+            //-------------------------------------------------------------
+            $('.kor').attr('src', 'img/KOR_hover.gif');
+            $('#lang>li').each(function (index) {
+                $(this).attr('data-index',index);
+            }).click(function () {
+                var i = $(this).attr('data-index');
+                if (i == 0) {
+                    $('.kor').attr('src', 'img/KOR_hover.gif');
+                    $('.eng').attr('src','img/ENG.jpg');
+                } else if (i == 1) {
+                    $('.kor').attr('src', 'img/KOR.jpg');
+                    $('.eng').attr('src','img/ENG_hover.gif');
+                }
+            });
+            //-------------------------------------------------------------
+            var button = $('#banner_but>div');
+            var img = $('#banner_wrap>img');
+            var current = 0;
+
+            button.on({
+                mouseover: function () {
+                    clearInterval(time_ani);
+                },
+                click: function () {
+                    var tg = $(this);
+                    var i = tg.index();
+
+                    imgMove(i);
+                },
+                mouseout: function () {
+                    timer();
+                }
+            });
+
+            timer();
+
+            function timer() {
+                time_ani = setInterval(function () {
+                    var n = current + 1;
+                    if (n == img.size()) {
+                        n = 0;
+                    }
+
+                    button.eq(n).trigger('click');
+
+                }, 2000);
+            }
+            function imgMove(i) {
+                if (current == i) return;
+
+                var willMoveLeft = -(i * 1200);
+
+                $('#banner_wrap').stop().animate({
+                    left:willMoveLeft
+                }, 'slow');
+                current = i;
+            }
+            //-------------------------------------------------------------
+            var now = 0;
+            $('#doll_img_wrap>img').hover(function () {
+                clearInterval(time);
+            }, function () {
+                ani_time();
+            }).click(function () {
+                now += 1;
+                $('#doll_img_wrap').stop().animate({ 'left': '-297px' }, 500, function () {
+                    $('#doll_img_wrap').css('left', '0px').find('img:first').appendTo('#doll_img_wrap');
+                });
+            });
+            function ani_time() {
+                time = setInterval(function () {
+                    $('#doll_img_wrap>img').trigger('click');
+                },1000);
+            }
+            ani_time();
+            //-------------------------------------------------------------
+            $('.catalog_icon').on({
+                mouseover: function () {
+                    var tg = $(this);
+                    var i = tg.index();
+                    $('.catalog_text').eq(i).fadeIn(500);
+                },
+                mouseout: function () {
+                    var tg = $(this);
+                    var i = tg.index();
+                    $('.catalog_text').fadeOut(150);
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+    <div id="lang_menu">
+        <div id="warp_lang_menu">
+            <ul id="lang">
+                <li>
+                    <img src="img/KOR.jpg" class="kor" />
+                </li>
+                <li>
+                    <img src="img/ENG.jpg" class="eng" />
+                </li>
+            </ul>
+            <a href="#">
+                <img src="img/bookmark.jpg" />
+            </a>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------->
+    <div id="top_menu">
+        <div id="logo">
+            <a href="#"><img src="img/logo.jpg" /></a>
+        </div>
+        <ul id="top_right_menu">
+            <li><a href="#"><img src="img/top_r_menu_1.jpg" /></a></li>
+            <li><a href="#"><img src="img/top_r_menu_2.jpg" /></a></li>
+            <li><a href="#"><img src="img/top_r_menu_3.jpg" /></a></li>
+            <li><a href="#"><img src="img/top_r_menu_4.jpg" /></a></li>
+        </ul>
+    </div>
+    <!----------------------------------------------------------------------------->
+    <div id="top_icon">
+        <a href="#logo"><img src="img/quick_top.png" /></a>
+    </div>
+    <!----------------------------------------------------------------------------->
+    <header id="main_header">
+        <ul id="header_menu">
+            <li><a href="http://www.ikea.com/kr/ko/catalog/news/departments/">NEW</a></li>
+            <li><img src="img/nav_1_1.jpg" /></li>
+            <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/childrens_ikea/">Children's IKEA</a></li>
+            <li><img src="img/nav_2_1.jpg" /></li>
+            <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/workspaces/">홈오피스</a></li>
+            <li><img src="img/nav_3_1.jpg" /></li>
+            <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/living_room/">거실</a></li>
+            <li><img src="img/nav_4_1.jpg" /></li>
+            <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/bedroom/">침실</a></li>
+            <li><img src="img/nav_5_1.jpg" /></li>
+            <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/kitchen/">주방</a></li>
+            <li><img src="img/nav_6_1.jpg" /></li>
+            <li><a href="http://www.ikea.com/kr/ko/Local_homepage/homeideas.html?icid=iba|kr|hfideas|201512140207497557_1">홈퍼니싱 아이디어</a></li>
+        </ul>
+        <div id="search">
+            <input type="search" />
+            <a href="#">
+                <img src="img/nav_8_search.jpg" />
+            </a>
+        </div>
+        <input type="checkbox" id="all_menu" />
+        <label for="all_menu"><img src="img/nav_9.jpg" id="all_menu_but"/></label>
+        <div id="all_menu_nav">
+            <ul>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/childrens_ikea/">Children's IKEA</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/workspaces/">홈오피스</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/decoration/">홈데코</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/hallway/">현관</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/living_room/">거실</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/bedroom/">침실</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/metod_kitchen/">주방</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/bathroom/">욕실</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/dining/">다이닝</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/outdoor/">발코니 / 정원</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/laundry/">다용도실</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/Textiles/">텍스타일</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/lighting/">조명</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/small_storage/">수납</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/secondary_storage/">보조수납</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/categories/departments/ikea_family_products/">IKEA FAMILY</a></li>
+            </ul>
+        </div>
+    </header>
+    <!----------------------------------------------------------------------------->
+    <section id="main_section">
+        <article id="banner_mask">
+            <div id="banner_wrap">
+                <!--<a href="http://www.ikea.com/kr/ko/catalog/categories/departments/childrens_ikea/">-->
+                    <img src="img/banner_1.jpg" />
+                <!--</a>-->
+                <!--<a href="http://www.ikea.com/kr/ko/catalog/categories/departments/workspaces/">-->
+                    <img src="img/banner_2.jpg" />
+                <!--</a>
+                <a href="http://www.ikea.com/kr/ko/catalog/categories/departments/living_room/">-->
+                    <img src="img/banner_3.jpg" />
+                <!--</a>
+                <a href="http://www.ikea.com/kr/ko/catalog/categories/departments/bedroom/">-->
+                    <img src="img/banner_4.jpg" />
+                <!--</a>-->
+            </div>
+            <div id="banner_but">
+                <div class="slider_button"></div>
+                <div class="slider_button"></div>
+                <div class="slider_button"></div>
+                <div class="slider_button"></div>
+            </div>
+        </article>
+        <!----------------------------------------------------------------------------->
+        <article id="new_product">
+            <div id="new_more">
+                <a href="#"><img src="img/more.jpg" /></a>
+            </div>
+            <ul id="new_img">
+                <li><a href="http://www.ikea.com/kr/ko/catalog/products/20310346/"><img src="img/new_1.jpg" /></a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/products/30310341/"><img src="img/new_2.jpg" /></a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/products/S29048657/"><img src="img/new_3.jpg" /></a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/products/60297239/"><img src="img/new_4.jpg" /></a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/products/50308634/"><img src="img/new_5.jpg" /></a></li>
+            </ul>
+        </article>
+        <!----------------------------------------------------------------------------->
+        <article id="hot_product">
+            <div id="hot_more">
+                <a href="#"><img src="img/more.jpg" /></a>
+            </div>
+            <ul id="hot_img">
+                <li><a href="http://www.ikea.com/kr/ko/catalog/products/S09030620/"><img src="img/hot_1.jpg" /></a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/products/40171052/"><img src="img/hot_2.jpg" /></a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/products/90284928/"><img src="img/hot_3.jpg" /></a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/products/S59046529/"><img src="img/hot_4.jpg" /></a></li>
+                <li><a href="http://www.ikea.com/kr/ko/catalog/products/50225592/"><img src="img/hot_5.jpg" /></a></li>
+            </ul>
+        </article>
+        <!----------------------------------------------------------------------------->
+        <article id="doll">
+            <div id="doll_title">
+                <a href="http://www.ikea.com/ms/ko_KR/good-cause-campaign/soft-toys-for-education/index.html?icid=iba|kr|december15|201512020823462832_1">
+                    아이들의 디자인과 함께 하는 좋은 세상▶
+                </a>
+            </div>
+            <div id="doll_mask">
+                <div id="doll_img_wrap">
+                    <img src="img/doll_1_sprites.png" class="doll_hover" />
+                    <img src="img/doll_2_sprites.png" class="doll_hover" />
+                    <img src="img/doll_3_sprites.png" class="doll_hover" />
+                    <img src="img/doll_4_sprites.png" class="doll_hover" />
+                    <img src="img/doll_5_sprites.png" class="doll_hover" />
+                    <img src="img/doll_6_sprites.png" class="doll_hover" />
+                    <img src="img/doll_7_sprites.png" class="doll_hover" />
+                    <img src="img/doll_8_sprites.png" class="doll_hover" />
+                </div>
+            </div>
+        </article>
+        <!----------------------------------------------------------------------------->
+        <article id="catalog">
+            <div id="catalog_wrap">
+                <div id="text_wrap">
+                    <img src="img/icon_1_text.png" class="catalog_text" />
+                    <img src="img/icon_2_text.png" class="catalog_text" />
+                    <img src="img/icon_3_text.png" class="catalog_text" />
+                    <img src="img/icon_4_text.png" class="catalog_text" />
+                    <img src="img/icon_5_text.png" class="catalog_text" />
+                    <img src="img/icon_6_text.png" class="catalog_text" />
+                </div>
+                <div id="icon_wrap">
+                    <img src="img/catalog_1.png" class="catalog_icon" />
+                    <img src="img/catalog_2.png" class="catalog_icon" />
+                    <img src="img/catalog_3.png" class="catalog_icon" />
+                    <img src="img/catalog_4.png" class="catalog_icon" />
+                    <img src="img/catalog_5.png" class="catalog_icon" />
+                    <img src="img/catalog_6.png" class="catalog_icon" />
+                </div>
+                
+            </div>
+            <a href="http://www.ikea.com/kr/ko/customer-service/about-shopping/catalogue-and-brochures/index.html?icid=iba|kr|catalogue2016|201508111048269349_1">
+                IKEA 디지털 카탈로그 보러가기 >>
+            </a>
+        </article>
+        <!----------------------------------------------------------------------------->
+        <article id="offline">
+            <div id="off_map_warp">
+                <img src="img/off_1.jpg" />
+                <img src="img/off_map.jpg"/>
+            </div>
+            <ul id="look_map">
+                <li><a href="http://map.naver.com/local/siteview.nhn?code=36132719">네이버 지도 찾기 ></a></li>
+                <li><a href="http://place.map.daum.net/23121637">다음 지도 찾기 ></a></li>
+            </ul>
+            <img src="img/off_5.jpg" />
+        </article>
+    </section>
+    <!----------------------------------------------------------------------------->
+    <footer id="main_footer">
+        <div id="top_footer">
+            <ul id="footer_catalog">
+                <li class="footer_title">카탈로그와 브로슈어</li>
+                <li><a href="http://www.ikea.com/ms/ko_KR/customer-service/about-shopping/catalogue-and-brochures/index.html">카탈로그 온라인에서 보기</a></li>
+                <li><a href="http://www.ikea.com/ms/ko_KR/customer-service/buying-guides/index.html">제품구매안내</a></li>
+                <li><a href="http://www.ikea.com/ms/ko_KR/customer-service/guarantee/guarantee.html">IKEA 품질보증</a></li>
+            </ul>
+            <ul id="ikea_food">
+                <li class="footer_title">IKEA FOOD</li>
+                <li><a href="http://www.ikea.com/kr/ko/ikea_food/index.html">레스토랑</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/ikea_food/index.html">어린이 메뉴</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/ikea_food/index.html">비스트로</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/ikea_food/index.html">식품 정책</a></li>
+            </ul>
+            <ul id="ikea_planner">
+                <li class="footer_title">IKEA 플래너</li>
+                <li><a href="http://www.ikea.com/ms/ko_KR/rooms_ideas/planner_pax3d/index.html">PAX/팍스 3d 플래너</a></li>
+                <li><a href="http://www.ikea.com/ms/ko_KR/rooms_ideas/planner_bestauppleva/index.html">BESTA/베스토 수납 플래너</a></li>
+                <li><a href="http://www.ikea.com/kr/ko/">오피스 플래너</a></li>
+            </ul>
+            <ul id="ikea_service">
+                <li class="footer_title">IKEA 부가서비스</li>
+                <li><a href="http://www.ikea.com/ms/ko_KR/service-offer/assembly/index.html">조립서비스</a></li>
+                <li><a href="http://www.ikea.com/ms/ko_KR/service-offer/kitchen-installation/index.html">설치서비스</a></li>
+                <li><a href="http://www.ikea.com/ms/ko_KR/service-offer/measurement/">측정서비스</a></li>
+                <li><a href="http://www.ikea.com/ms/ko_KR/service-offer/picking-with-delivery/index.html">픽업 & 배송서비스</a></li>
+            </ul>
+                <ul id="customer">
+                    <li class="footer_title">고객지원</li>
+                    <li><a href="http://www.ikea.com/ms/ko_KR/customer-service/how-to-shop/howtoshop_map.html">IKEA에서 쇼핑하기</a></li>
+                    <li><a href="http://www.ikea.com/ms/ko_KR/service-offer/index.html">IKEA 서비스</a></li>
+                    <li><a href="http://www.ikea.com/ms/ko_KR/customer-service/return-policy/index.html">반품정책</a></li>
+                    <li><a href="http://www.ikea.com/kr/ko/customerservices/faq">FAQ</a></li>
+                    <li><a href="http://www.ikea.com/ms/ko_KR/customer-service/contact-us/index.html">고객문의</a></li>
+                </ul>
+                <ul id="news">
+                    <li>뉴스룸</li>
+                    <li><a href="http://www.ikea.com/kr/ko/about_ikea/newsroom/">기업뉴스</a></li>
+                    <li><a href="http://www.ikea.com/ms/ko_KR/pressroom/index.html">제품뉴스</a></li>
+                    <li><a href="http://www.ikea.com/ms/ko_KR/this-is-ikea/reports-downloads/index.html">리포트 및 다운로드</a></li>
+                    <li><a href="http://www.ikea.com/ms/ko_KR/about_ikea/newsroom/product_recalls/index.html">제품리콜</a></li>
+                </ul>
+            <div id="sns">
+                <a href="https://www.facebook.com/IKEA.kr">
+                    <img src="img/sns_1_facebook.jpg" />
+                </a>
+                <a href="https://story.kakao.com/ch/ikea">
+                    <img src="img/sns_2_kakao.jpg" />
+                </a>
+                <a href="https://www.youtube.com/user/IKEAKorea">
+                    <img src="img/sns_3_youtube.jpg" />
+                </a>
+            </div>
+        </div>
+        <div id="bottom_footer">
+            <ul>
+                <li><a class="b_footer_text" href="http://www.ikea.com/ms/ko_KR/privacy_policy/privacy_policy.html">웹사이트 이용약관</a></li>
+                <li><a class="b_footer_text" href="http://www.ikea.com/ms/ko_KR/privacy_policy/privacy_policy_ko.html">IKEA 개인정보취급방침</a></li>
+                <li><a class="b_footer_text" href="http://www.ikea.com/ms/ko_KR/ikea_family/terms.html">IKEA FAMILY 개인정보취급방침</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

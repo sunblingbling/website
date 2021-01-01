@@ -1,0 +1,489 @@
+﻿@media all and (min-width:361px) {
+    .mobile_360 {
+        display: none;
+    }
+    .web_361{
+        display:block;
+    }
+    /*-------------------------------------*/
+    #doosan_wrap {
+        width:1200px;
+        overflow:hidden;
+        margin:0 auto;
+    }
+    /*-------------------------------------*/
+    #langauge_area {
+        height: 27px;
+        position: relative;
+        background-color: #0087ce;
+    }
+
+    .lang {
+        position: absolute;
+        top: 10.5px;
+    }
+
+    .kor {
+        left: 1136px;
+    }
+
+    .eng {
+        left: 1167px;
+    }
+    /*-------------------------------------*/
+    #logo_area {
+        height: 69px;
+        position: relative;
+    }
+
+    #logo {
+        width: 116px;
+        height: 52px;
+        position: absolute;
+        top: 8px;
+        left: 7px;
+    }
+
+    #logo_right_menu {
+        position: absolute;
+        top: 23px;
+        right: 22px;
+    }
+    #logo_right_menu > li {
+        float: left;
+        font-family: 'Malgun Gothic';
+        font-size: 14px;
+        font-weight: 800;
+    }
+    #logo_right_menu > li > a {
+        color: #837777;
+    }
+    #logo_right_menu > li:nth-child(2) {
+         margin-left: 35px;
+    }
+    #logo_right_menu > li:hover > a {
+         text-decoration: underline;
+    }
+    /*-------------------------------------*/
+    #quick_top {
+        width: 44px;
+        height: 44px;
+        position: fixed;
+        left: 50%;
+        margin-left: 556px;
+        z-index: 999999;
+    }
+    /*-------------------------------------*/
+    #main_header {
+        width: 1200px;
+        height: 502px;
+        overflow: hidden;
+        position: relative;
+    }
+    #banner_wrap {
+        width: 4800px;
+        height: 502px;
+        position: absolute;
+    }
+    #banner_wrap > img {
+        width: 1200px;
+        height: 502px;
+        float: left;
+    }
+    /*-------------------------------------*/
+    #main_nav_361 {
+        height: 54px;
+        position: relative;
+    }
+    #nav {
+        position: absolute;
+        left: 30px;
+    }
+     #main_nav_361 li {
+        float: left;
+        padding-top: 8px;
+        font-family: 'Malgun Gothic';
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #nav a {
+        color: #8d99a0;
+    }
+    #main_nav_361 li:nth-child(2n+1) {
+        padding-top: 5px;
+        width: 133px;
+        text-align: center;
+        padding-top: 12.5px;
+    }
+    #main_nav_361 li:nth-child(2n+1):hover {
+        border-top: 5px solid #0087ce;
+     }
+    #main_nav_361 li:nth-child(1) {
+        margin-right: 30px;
+    }
+     #main_nav_361 li:nth-child(3) {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #main_nav_361 li:nth-child(5) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    #main_nav_361 li:nth-child(7) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    #main_nav_361 li:nth-child(9) {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #main_nav_361 li:nth-child(11) {
+        margin-left: 25px;
+    }
+    /*------------------<con_1>--------------------*/
+    #main_section {
+        position: relative;
+    }
+    #con_1{
+        position:relative;
+        height:825px;
+        background-image:url(img/factory_web.jpg);
+    }
+    #con_1_title{
+        position:absolute;
+        top:45px;
+        left:38px;
+    }
+    #con_1_title>li{
+        float:left;
+    }
+    .con_title{
+        color:#33271f;
+        font-size:24px;
+        font-family:'Malgun Gothic';
+        font-weight:900;
+    }
+    .con_text{
+        color:#276f95;
+        font-size:24px;
+        font-family:'Malgun Gothic';
+        font-weight:700;
+        margin-left:22px;
+    }
+    #factory_icon>img{
+        position:absolute;
+        cursor:pointer;
+    }
+    #f_icon_1{
+        left:640px;
+        top:200px;
+    }
+    #f_icon_2{
+        left:440px;
+        top:164px;
+    }
+    #f_icon_3{
+        left:740px;
+        top:300px;
+    }
+    #f_icon_4{
+        left:404px;
+        top:317px;
+    }
+    .factory_gallery{
+        position:absolute;
+        top:586px;
+        left:32px;
+    }
+    .factory_title{
+        margin-left:14px;
+        margin-bottom:15px;
+    }
+    .factory_img img{
+        width:260px;
+        height:145px;
+        float:left;
+        margin-right:32px;
+        margin-bottom:11px;
+    }
+    .factory_text>li{
+        float:left;
+        font-size:14px;
+        font-family:'Malgun Gothic';
+        font-weight:500;
+    }
+    .factory_text>li>a{
+        color:#2a8570;
+    }
+    .factory_text>li:hover>a{
+        text-decoration:underline;
+    }
+    .factory_gallery{
+        display:none;
+    }
+    #energy_text{
+        margin-left:96px;
+    }
+    #energy_text>li:nth-child(2){
+        margin-left:211px;
+    }
+    #energy_text>li:nth-child(3){
+        margin-left:185px;
+    }
+    #energy_text>li:nth-child(4){
+        margin-left:134px;
+    }
+    #water_text{
+        margin-left:71px;
+    }
+    #water_text>li:nth-child(2){
+        margin-left:190px;
+    }
+    #water_text>li:nth-child(3){
+        margin-left:210px;
+    }
+    #cast_text{
+        margin-left:100px;
+    }
+    #cast_text>li:nth-child(2){
+        margin-left:233px;
+    }
+    #cast_text>li:nth-child(3){
+        margin-left:236px;
+    }
+    #cast_text>li:nth-child(4){
+        margin-left:230px;
+    }
+    #build_text{
+        margin-left:115px;
+    }
+    #build_text>li:nth-child(2){
+        margin-left:266px;
+    }
+    #build_text>li:nth-child(3){
+        margin-left:259px;
+    }
+    #build_text>li:nth-child(4){
+        margin-left:240px;
+    }
+    /*------------------<con_2>--------------------*/
+    #con_2{
+        position:relative;
+        height:800px;
+        margin-top:46px;
+        background-image:url(img/map_web.jpg);
+    }
+    #con_2_title{
+        position:absolute;
+        top:45px;
+        left:38px;
+    }
+    #con_2_title>li{
+        float:left;
+    }
+    .con_small_text{
+        font-size:12px;
+        font-family:'Malgun Gothic';
+        font-weight:600;
+    }
+    .con_small_text>a{
+        color:#2a8570;
+    }
+    #con_2_small{
+        position:absolute;
+        right:15px;
+        bottom:12px;
+    }
+    #con_2_small>li:first-child{
+        margin-bottom:5px;
+    }
+    #con_2_small>li:hover>a{
+        text-decoration:underline;
+    }
+    #map_icon_web>img{
+        position:absolute;
+        cursor:pointer;        
+    }
+    .eu{
+        left:102px;
+        top:160px;
+    }
+    .asia{
+        left:382px;
+        top:200px;
+    }
+    .africa{
+        left:117px;
+        top:455px;
+    }
+    .north{
+        right:71px;
+        top:220px;
+    }
+    .south{
+        right:145px;
+        bottom:230px;
+    }
+    /*------------------<con_3>--------------------*/
+    #con_3{
+        width:1140px;
+        height:266px;
+        position:relative;
+        margin:0 auto;
+        margin-top:65px;
+    }
+    #news{
+        float:left;
+        width:686px;
+        height:235px;
+        position:relative;
+    }
+    #news_title_wrap{
+        width:687px;
+        height:19px;
+        position:relative;
+    }
+    .news_title_part{
+        position:absolute;
+    }
+    #news_line{
+        width:600px;
+        left:86px;
+        top:9px;
+    }
+    .news_con{
+        margin-top:43px;
+    }
+    .news_con>li{
+        font-size:16px;
+        font-family:'Malgun Gothic';
+        font-weight:500;
+        margin-top:25px; 
+    }
+    .news_con>li:first-child{
+        margin-top:0;
+    }
+    #news_date{
+        float:left;
+        margin-left:23px;
+        margin-right:32px;
+    }
+    #news_date>li{
+        color:#33271f;
+    }
+    #news_text>li>a{
+        color:#4c829e;
+    }
+    #news_text>li:hover>a{
+        text-decoration:underline;
+    }
+    #mv{
+        width:380px;
+        height:266px;
+        position:absolute;
+        right:0;
+    }
+    #mv_title{
+        margin-bottom:29px;
+    }
+    #mv_img{
+        cursor:pointer;
+    }
+    /*------------------<footer>--------------------*/
+    #main_footer{
+        height:250px;
+        position:relative;
+        background:#dddddd;
+        margin-top:100px;        
+    }
+    .footer_title{
+        font-size:14px;
+        font-family:'Malgun Gothic';
+        font-weight:700;
+    }
+    .footer_title>a{
+        color:#5f6b72;
+    }
+    .footer_text{
+        font-size:14px;
+        font-family:'Malgun Gothic';
+        font-weight:500;
+    }
+    .footer_text>a{
+        color:#929799;
+    }
+    #footer_left_area{
+        width:908px;
+        height:177px;
+        position:absolute;
+        left:23px;
+        top:30px;
+    }
+    #footer_logo{
+        position:absolute;
+        top:74px;
+    }
+    #sign{
+        position:absolute;
+        bottom:0;
+    }
+    .footer_ul{
+        float:left;
+        position:absolute;
+        top:0;
+        left:230px;
+    }
+    #footer_2{
+        left:350px;
+    }
+    #footer_3{
+        left:470px;
+    }
+    #footer_4{
+        left:637px;
+    }
+    #footer_5{
+        left:782px;
+    }
+    .footer_ul>li{
+        margin-top:14px;
+    }
+    .footer_ul>li:first-child{
+        margin-top:0;
+    }
+    .footer_ul>li:hover>a{
+        text-decoration:underline;
+    }
+    #footer_right_area{
+        width:236px;
+        height:250px;
+        position:absolute;
+        right:0px;
+    }
+    #quick_go{
+         width:220px;
+         height:29px;
+         position:relative;
+         margin-top:28px;
+         margin-right:13px;
+         overflow:hidden;
+    }
+    #quick_go>select{
+         width:185px;
+         height:29px;
+    }
+    #quick_go img{
+         float:left;
+         position:absolute;
+         right:0;
+         width:35px;
+         height:29px;
+    }
+    #rss{
+         position:absolute;
+         right:0px;
+         top:-35px;
+         width:30px;
+         height:30px;
+    }
+}        

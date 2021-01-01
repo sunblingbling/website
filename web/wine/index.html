@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WINE</title>
+    <link href="index.css" type="text/css" rel="stylesheet" /> 
+    <script src="jquery-1.11.3.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#eng').attr('src', 'img/ENG_h.png')
+            $('#lang_area>img').each(function (index) {
+                $(this).attr('data-index', index);
+            }).click(function () {
+                var i = $(this).attr('data-index');
+
+                if (i == 0) {
+                    $('#kor').attr('src', 'img/KOR_h.png');
+                    $('#eng').attr('src', 'img/ENG.png');
+                } else if (i == 1) {
+                    $('#kor').attr('src', 'img/KOR.png');
+                    $('#eng').attr('src', 'img/ENG_h.png');
+                }
+            });
+            //---------------------------<main_page>--------------------------------
+            $('#con_1_open_main').click(function () {
+                $('#main_wrap').animate({
+                    left:'-990px'
+                },2000);
+            });
+            $('#con_2_open_main').click(function () {
+                $('#main_wrap').animate({
+                    left: '-1980px'
+                }, 3000);
+            });
+            $('#con_3_open_main').click(function () {
+                $('#main_wrap').animate({
+                    left: '-2970px'
+                }, 3000);
+            });
+            //---------------------------<con_1>--------------------------------
+            $('#con_1_side_1').click(function () {
+                $('#main_wrap').animate({
+                    left:'-1980px'
+                },2000);
+            });
+            $('#con_1_side_2').click(function () {
+                $('#main_wrap').animate({
+                    left: '-2970px'
+                },3000);
+            });
+            //---------------------------<con_2>--------------------------------
+            $('#con_2_side_1').click(function () {
+                $('#main_wrap').animate({
+                    left: '-990px'
+                }, 2000);
+            });
+            $('#con_2_side_2').click(function () {
+                $('#main_wrap').animate({
+                    left: '-2970px'
+                }, 2000);
+            });
+            //---------------------------<con_3>--------------------------------
+            $('#con_3_side_1').click(function () {
+                $('#main_wrap').animate({
+                    left: '-990px'
+                }, 3000);
+            });
+            $('#con_3_side_2').click(function () {
+                $('#main_wrap').animate({
+                    left: '-1980px'
+                }, 2000);
+            });
+            //---------------------------<logo_back>--------------------------------
+            $('#logo').click(function () {
+                $('#main_wrap').animate({
+                    left:-0
+                },2000);
+            });
+            //---------------------------<con_3_list>--------------------------------
+            $('.con_3_main_text').click(function () {
+                $('#con_3_active').css('display', 'block');
+            });
+            $('#x').click(function () {
+                $('#con_3_active').css('display', 'none');
+            });
+        })
+    </script>
+</head>
+<body>
+    <div id="all_page">
+        <div id="lang_area">
+            <img src="img/KOR.png" id="kor" />
+            <img src="img/ENG.png" id="eng" />
+        </div>
+        <!---------------------------------------------------->
+        <div id="logo_area">
+            <a href="#"><img src="img/logo.jpg" id="logo" /></a>
+        </div>
+        <!---------------------------------------------------->
+        <section id="main_section">
+            <div id="main_wrap">
+                <div id="main_page" class="float_left">
+                    <img src="img/main_1_sprites.png" id="con_1_open_main" />
+                    <img src="img/main_2_sprites.png" id="con_2_open_main" />
+                    <img src="img/main_3_sprites.png" id="con_3_open_main" />
+                </div>
+                <div id="con_1" class="float_left">
+                    <div id="con_1_main" class="article_main">
+                        <div class="con_title">
+                            <img src="img/article_1_title.png" />
+                        </div>
+                        <div class="con_sub_title">
+                            <img src="img/01_about_us.png" />
+                        </div>
+                        <div id="con_1_text_box">
+                            <img src="img/article_text_1.jpg" id="con_text_1" />
+                            <img src="img/article_text_2.jpg" id="con_text_2" />
+                        </div>
+                    </div>
+                    <div id="con_1_side">
+                        <a href="#"><img src="img/article_2_side_1_sprites.png" id="con_1_side_1" class="con_h con_h_1" /></a>
+                        <a href="#"><img src="img/article_2_side_2_sprites.png" id="con_1_side_2" class="con_h con_h_2" /></a>
+                    </div>
+                </div>
+                <!-------------------------<con_2>--------------------------->
+                <div id="con_2" class="float_left">
+                    <div id="con_2_main" class="article_main">
+                        <div class="con_title">
+                            <img src="img/article_2_title.png" />
+                        </div>
+                        <div class="con_sub_title">
+                            <img src="img/02_menu.png" />
+                        </div>
+                        <div id="wine_1" class="con_2_wine">
+                            <a href="#"><img src="img/wine_img_1.png" /></a>
+                            <ul id="wine_1_ul" class="con_2_ul">
+                                <li class="wine_title"><a href="#">2012 ROBERT MONDAVI WINERY<br />CABERNET SAUVIGNON REVERSE<br />TO KALON VINEYARD OAKVILLE<br />NAPA VALLEY</a></li>
+                                <li><img src="img/wine_1_text.png" /></li>
+                                <li><img src="img/wine_1_good.png" /></li>
+                                <li><img src="img/wine_1_price.png" /></li>
+                            </ul>
+                        </div>
+                        <div id="wine_2" class="con_2_wine">
+                            <a href="#"><img src="img/wine_img_2.png" /></a>
+                            <ul id="wine_2_ul" class="con_2_ul">
+                                <li class="wine_title"><a href="#">2013 ROBERT MONDAVI WINERY<br />FUME BLANC RESERVE TO KALON<br />VINEYARD NAPA VALLEY</a></li>
+                                <li><img src="img/wine_2_text.png" /></li>
+                                <li><img src="img/wine_2_good.png" /></li>
+                                <li><img src="img/wine_2_price.png" /></li>
+                            </ul>
+                        </div>
+                        <div id="wine_3" class="con_2_wine">
+                            <a href="#"><img src="img/wine_img_3.png" /></a>
+                            <ul id="wine_3_ul" class="con_2_ul">
+                                <li class="wine_title"><a href="#">2014 ROBERT MONDAVI WINERY<br />ROSE WINE NAPA VALLEY</a></li>
+                                <li><img src="img/wine_3_text.png" /></li>
+                                <li><img src="img/wine_3_good.png" /></li>
+                                <li><img src="img/wine_3_sale.png" /></li>
+                                <li><img src="img/wine_3_price.png" /></li>
+                            </ul>
+                        </div>
+                        <div id="wine_4" class="con_2_wine">
+                            <a href="#"><img src="img/wine_img_4.png" /></a>
+                            <ul id="wine_4_ul" class="con_2_ul">
+                                <li class="wine_title"><a href="#">2014 ROBERT MONDAVI WINERY<br />FUME BLANC NAPA VALLEY</a></li>
+                                <li><img src="img/wine_4_text.png" /></li>
+                                <li><img src="img/wine_4_good.png" /></li>
+                                <li><img src="img/wine_4_price.png" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="con_2_side">
+                        <a href="#"><img src="img/article_3_side_1_sprite.png" id="con_2_side_1" class="con_h con_h_1" /></a>
+                        <a href="#"><img src="img/article_3_side_2_sprite.png" id="con_2_side_2" class="con_h con_h_2" /></a>
+                    </div>
+                </div>
+                <!-------------------------<con_3>--------------------------->
+                <div id="con_3" class="con_3_hidden float_left">
+                    <div id="con_3_main" class="article_main">
+                        <div class="con_title">
+                            <img src="img/article_3_title.png" />
+                        </div>
+                        <div class="con_sub_title">
+                            <img src="img/03_location.png" />
+                        </div>
+                        <!--<div id="con_3_where">-->
+                        <ul id="america" class="where">
+                            <li><img src="img/1_america.png" /></li>
+                            <li class="con_3_main_text con_3_first"><a href="#">Canada</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Brazil</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Guatemala</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Mexico</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">USA</a></li>
+                        </ul>
+                        <ul id="asia" class="where">
+                            <li><img src="img/2_aisa.png" /></li>
+                            <li class="con_3_main_text con_3_first"><a href="#">Cambodia</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">China</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Hong Kong</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">India</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Japan</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Korea</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Malaysia</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Philipines</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Singapore</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Thailand</a></li>
+                        </ul>
+                        <ul id="oceania" class="where">
+                            <li><img src="img/3_oceania.png" /></li>
+                            <li class="con_3_main_text con_3_first"><a href="#">Australia</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Fiji</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">New Zealand</a></li>
+                        </ul>
+                        <ul id="eu_left" class="where">
+                            <li><img src="img/4_europe.png" /></li>
+                            <li class="con_3_main_text con_3_first"><a href="#">Austria</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Belgium</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Denmark</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Estonia</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">France</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Finland</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Germany</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Iceland</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Italy</a></li>
+                            <li class="con_3_main_text con_3_margin"><a href="#">Netherlands</a></li>
+                        </ul>
+                        <ul id="eu_right" class="where">
+                            <li class="con_3_main_text eu_right"><a href="#">Norway</a></li>
+                            <li class="con_3_main_text eu_right con_3_margin"><a href="#">Poland</a></li>
+                            <li class="con_3_main_text eu_right con_3_margin"><a href="#">Russia</a></li>
+                            <li class="con_3_main_text eu_right con_3_margin"><a href="#">Spain</a></li>
+                            <li class="con_3_main_text eu_right con_3_margin"><a href="#">Sweden</a></li>
+                            <li class="con_3_main_text eu_right con_3_margin"><a href="#">Switzerland</a></li>
+                            <li class="con_3_main_text eu_right con_3_margin"><a href="#">Ukraine</a></li>
+                            <li class="con_3_main_text eu_right con_3_margin"><a href="#">United Kingdom</a></li>
+                            <li class="con_3_main_text eu_right con_3_margin"><a href="#">Malta</a></li>
+                        </ul>
+                        <!--</div>-->
+                    </div>
+                    <div id="con_3_side">
+                        <a href="#"><img src="img/article_4_side_1_sprite.png" id="con_3_side_1" class="con_h con_h_1 con_3_hidden" /></a>
+                        <a href="#"><img src="img/article_4_side_2_sprite.png" id="con_3_side_2" class="con_h con_h_2" /></a>
+                    </div>
+                    <div id="con_3_active">
+                        <div id="active_box">
+                            <img src="img/input_1.jpg" id="x" />
+                            <img src="img/input_2.jpg" />
+                            <ul id="input_list">
+                                <li><img src="img/name.png" /></li>
+                                <li><img src="img/postal.png" /></li>
+                                <li><img src="img/mail.png" /></li>
+                            </ul>
+                            <div id="con_3_input">
+                                <input type="text" id="name_box" />
+                                <input type="text" id="postal_box" />
+                                <input type="text" id="mail_box" />
+                            </div>
+                            <input type="submit" value="submit" id="submit" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------------------->
+        <footer id="main_footer">
+            <div id="left_footer">
+                <img src="img/designed_by.jpg" />
+            </div>
+            <div id="right_footer">
+                <ul>
+                    <li class="footer_menu"><a href="#">FAQ</a></li>
+                    <li class="footer_menu">|</li>
+                    <li class="footer_menu"><a href="#">Privacy</a></li>
+                    <li class="footer_menu">|</li>
+                    <li class="footer_menu"><a href="#">Legals</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,594 @@
+﻿*{
+            margin:0;
+            padding:0;
+        }
+        a{
+            text-decoration:none;
+            
+        }
+        li{
+            list-style:none;
+        }
+        input{
+            
+        }
+        .footer_title{
+            font-family:'Malgun Gothic';
+            font-size:13px;
+            color:#565b5f;
+            font-weight:800;
+        }
+        .b_footer_text{
+            color:white;
+            font-family:'Malgun Gothic';
+            font-size:13px;
+            font-weight:500;
+        }
+        .text_hover_line{
+            text-decoration:underline;
+            cursor:pointer;
+        }
+        .text_hover_bold{
+            font-weight:800;
+            cursor:pointer;
+        }
+        .slider_button.active{
+            top:-48px;
+        }
+        .doll_hover:hover{
+            top:-214px;
+            position:relative;
+        }
+        /*-----------------------------------------*/
+        #lang_menu{
+            width:100%;
+            height:68px;
+            border-bottom:1px solid #005aa8;
+        }
+        #warp_lang_menu{
+            width:1200px;
+            height:68px;
+            margin:0 auto;
+            position:relative;
+        }
+        #lang{
+            position:absolute;
+            right:17px;
+        }
+        #lang>li{
+            float:left;
+        }
+        #lang>li:nth-child(1){
+            margin-right:14px;
+            margin-top:20px;
+        }
+        #lang>li:nth-child(2){
+            margin-top:19px;
+        }
+        #warp_lang_menu a{
+            position:absolute;
+            right:13px;
+            top:45px;
+        }
+        /*---------------------------------*/
+        #top_menu{
+            width:1200px;
+            height:80px;
+            position:relative;
+            margin:0 auto;
+        }
+        #logo{
+            position:absolute;
+            top:18px;
+        }
+        #top_right_menu{
+            position:absolute;
+            top:54px;
+            right:7px;
+        }
+        #top_right_menu>li{
+            float:left;
+            margin-right:22px;
+        }
+        #top_right_menu>li:last-child{
+            margin-right:0;
+        }
+        #main_header{
+            width:1200px;
+            height:47px;
+            margin:0 auto;
+            background-image:url(img/main_nav_bg.jpg);
+            position:relative;
+            margin-bottom:5px;
+        }
+        #header_menu{
+            position:absolute;
+            top:7px;
+        }
+        #main_header li{
+            float:left;
+            margin-left:15px;
+        }
+        #header_menu a:nth-child(2n+1){
+            color:#fad400;
+            font-family:'Malgun Gothic';
+            font-size:18px;
+            font-weight:bold;
+            line-height:31px;
+        }
+        #search>input{
+            width:194px;
+            height:27px;
+            position:absolute;
+            top:10px;
+            right:214px;
+        }
+        #search img{
+            width:29px;
+            height:27px;
+            position:absolute;
+            top:10px;
+            right:185px;
+        }
+        /*---------------------------------*/
+        #top_icon{
+            position:fixed;
+            /*right:0;*/
+            left:50%;
+            margin-left:610px;
+            bottom:0;
+            opacity:0.8;
+        }
+        /*---------------------------------*/
+        #all_menu_nav{
+            width:216px;
+            height:720px;
+            background-image:url(img/all_menu_nav.jpg);
+            position:absolute;
+            z-index:99999999;
+            right:0;
+            top:47px;
+            display:none;
+        }
+        #all_menu_but{
+            position:absolute;
+            top:9px;
+            right:14px;
+            cursor:pointer;
+        }
+        #all_menu{
+            display:none;
+        }
+        #all_menu:checked~#all_menu_nav{
+            display:block;
+        }
+        #all_menu_nav li>a{
+            font-family:'Malgun Gothic';
+            color:#5f7385;
+            font-size:18px;
+        }
+        #all_menu_nav li:first-child {
+            margin-top:10px;
+            margin-left:45px;
+        }
+        #all_menu_nav li:nth-child(2){
+            margin-top:20px;
+            margin-left:73px;
+        }
+        #all_menu_nav li:nth-child(3){
+            margin-top:21px;
+            margin-left:80px;
+        }
+        #all_menu_nav li:nth-child(4){
+            margin-top:21px;
+            margin-left:88px;
+        }
+        #all_menu_nav li:nth-child(5){
+            margin-top:21px;
+            margin-left:88px;
+        }
+        #all_menu_nav li:nth-child(6){
+            margin-top:21px;
+            margin-left:88px;
+        }
+        #all_menu_nav li:nth-child(7){
+            margin-top:21px;
+            margin-left:88px;
+        }
+        #all_menu_nav li:nth-child(8){
+            margin-top:21px;
+            margin-left:88px;
+        }
+        #all_menu_nav li:nth-child(9){
+            margin-top:21px;
+            margin-left:80px;
+        }
+        #all_menu_nav li:nth-child(10){
+            margin-top:21px;
+            margin-left:52px;
+        }
+        #all_menu_nav li:nth-child(11){
+            margin-top:21px;
+            margin-left:73px;
+        }
+        #all_menu_nav li:nth-child(12){
+            margin-top:21px;
+            margin-left:73px;
+        }
+        #all_menu_nav li:nth-child(13){
+            margin-top:21px;
+            margin-left:88px;
+        }
+        #all_menu_nav li:nth-child(14){
+            margin-top:21px;
+            margin-left:88px;
+        }
+        #all_menu_nav li:nth-child(15){
+            margin-top:21px;
+            margin-left:73px;
+        }
+        #all_menu_nav li:nth-child(16){
+            margin-top:21px;
+            margin-left:57px;
+        }
+        #all_menu_nav li:hover>a{
+            text-decoration:underline;
+        }
+        /*---------------------------------*/
+        #main_section{
+            width:1200px;
+            margin:0 auto;
+            position:relative;
+        }
+        #banner_mask{
+            width:1200px;
+            height:739px;
+            overflow:hidden;
+            position:relative;
+        }
+        #banner_wrap{
+            width:4800px;
+            height:692px;
+            position:absolute;
+        }
+        #banner_wrap img{
+            width:1200px;
+            float:left;
+        }
+        #banner_but{
+            height:24px;
+            overflow:hidden;
+            position:absolute;
+            top:715px;
+            left:558px;
+        }
+        .slider_button{
+            background-image:url(img/banner_slider_sprite.png);
+            width:14px;
+            height:62px;
+            float:left;
+            margin-right:10px;
+            position:relative;
+        }
+        .slider_button:hover{
+            top:-24px;
+        }
+        .slider_button:active{
+            top:-48px;
+        }
+        /*---------------------------------*/
+        #new_product{
+            width:1200px;
+            height:317px;
+            margin-top:80px;
+            position:relative;
+        }
+        #new_more{
+            width:1200px;
+            height:15px;
+            border-bottom:1px solid #005aa8;
+        }
+        #new_more img{
+            position:absolute;
+            top:0;
+            right:6px;
+        }
+        #new_img{
+            margin-top:31px;
+        }
+        #new_img>li{
+            float:left;
+        }
+        #new_img>li:nth-child(2){
+            margin-left:31px;
+        }
+        #new_img>li:nth-child(3){
+            margin-left:40px;
+        }
+        #new_img>li:nth-child(4){
+            margin-left:37px;
+        }
+        #new_img>li:last-child{
+            position:absolute;
+            right:10px;
+        }
+        /*---------------------------------*/
+        #hot_product{
+            width:1200px;
+            height:354px;
+            margin-top:80px;
+            position:relative;
+        }
+        #hot_more{
+            width:1200px;
+            height:15px;
+            border-bottom:1px solid #005aa8;
+        }
+        #hot_more img{
+            position:absolute;
+            top:0;
+            right:6px;
+        }
+        #hot_img{
+            margin-top:27px;          
+        }
+        #hot_img>li{
+            float:left;
+        }
+        #hot_img>li:nth-child(2){
+            margin-left:30px;
+        }
+        #hot_img>li:nth-child(3){
+            margin-left:40px;
+        }
+        #hot_img>li:nth-child(4){
+            margin-left:56px;
+        }
+        #hot_img>li:last-child{
+            position:absolute;
+            right:10px;
+        }
+        /*---------------------------------*/
+        #doll{
+            height:370px;
+            margin-top:107px;
+            position:relative;
+            border-bottom:1px solid #005aa8;
+        }
+        #doll_title{
+            height:58px;
+            background-image:url(img/doll_bg.jpg);
+        }
+        #doll_title a{
+            position:absolute;
+            top:32px;
+            right:6px;
+            color:#fad400;
+            font-family:'Malgun Gothic';
+            font-size:14px;
+            font-weight:900;
+        }
+        #doll_title:hover>a{
+            text-decoration:underline;
+        }
+        #doll_mask{
+            width:1095px;
+            height:204px;
+            margin:0 auto;
+            margin-top:50px;
+            overflow:hidden;
+            position:relative;
+        }
+        #doll_img_wrap{
+            width:2283px;
+            position:absolute;
+            
+        }
+        .doll_hover{
+            float:left;
+            margin-right:93px;
+            cursor:pointer;
+        }
+        #doll_img_wrap>img:last-child{
+            margin-right:0;
+        }
+        /*#doll_img_wrap>img:nth-child(1){
+            left:0;
+        }
+        #doll_img_wrap>img:nth-child(2){
+            left:297px;
+        }
+        #doll_img_wrap>img:nth-child(3){
+            left:594px;
+        }
+        #doll_img_wrap>img:nth-child(4){
+            left:891px;
+        }
+        #doll_img_wrap>img:nth-child(5){
+            left:1188px;
+        }
+        #doll_img_wrap>img:nth-child(6){
+            left:1485px;
+        }
+        #doll_img_wrap>img:nth-child(7){
+            left:1782px;
+        }
+        #doll_img_wrap>img:nth-child(8){
+            left:2079px;
+        }*/
+        /*---------------------------------*/
+        #catalog{
+            width:1060px;
+            height:600px;
+            margin:0 auto;
+            margin-top:15px;
+            background-image:url(img/catalog.jpg);
+            position:relative;
+        }
+        #catalog_wrap{
+            width:506px;
+            height:178px;
+            position:relative;
+            top:279px;
+            left:504px;
+        }
+        #icon_wrap{
+            width:506px;
+            height:74px;
+            margin-top:30px;
+            overflow:hidden;
+        }
+        #icon_wrap>img:last-child{
+            margin-right:0;
+        }
+        #text_wrap{
+            width:463px;
+            height:74px;
+        }
+        .catalog_text {
+            position: absolute;
+        }
+        .catalog_icon{
+            float:left;
+            margin-right:12px;
+            position:relative;
+            cursor:pointer;
+        }
+        .catalog_icon:hover{
+            top:-74px;
+        }
+        .catalog_text{
+            display:none;
+        }
+        #catalog>a{
+            position:absolute;
+            bottom:11px;
+            right:16px;
+            font-family:'Malgun Gothic';
+            color:#124069;
+            font-size:14px;
+            font-weight:900;
+        }
+        #catalog>a:hover{
+            text-decoration:underline;
+        }
+        /*---------------------------------*/
+        #offline{
+            height:530px;
+            position:relative;
+            margin-top:15px;
+            border-top:1px solid #005aa8;
+            border-bottom:1px solid #005aa8;
+        }
+        #off_map_warp{
+            width:1154px;
+            height:465px;
+            margin:0 auto;
+            margin-top:29px;
+        }
+        #off_map_warp>img:nth-child(2){
+            margin-left:93px;
+            margin-top:27px;
+        }
+        #look_map a{
+            font-family:'Malgun Gothic';
+            color:#f53b81;
+            font-size:12px;
+            font-weight:900;
+        }
+        #look_map{
+            position:absolute;
+            left:115px;
+            top:420px;
+        }
+        #look_map>li{
+            float:left;
+        }
+        #look_map>li:hover>a{
+            text-decoration:underline;
+        }
+        #look_map>li:nth-child(2){
+            margin-left:20px;
+        }
+        #offline>img{
+            position:absolute;
+            left:115px;
+            top:465px;
+        }
+        /*-------------------------<footer영역>-------------------------*/
+        #main_footer{
+            width:1200px;
+            margin:0 auto;
+            margin-top:70px;
+            position:relative;
+        }
+        #top_footer{
+            height:229px;
+            background:#d5d5d5;
+        }
+        #top_footer>ul{
+            float:left;
+            margin-top:33px;
+            position:absolute;
+        }
+        #top_footer>ul a{
+            color:#6b7d8d;
+            font-family:'Malgun Gothic';
+            font-size:12px;
+            font-weight:500;
+        }
+        #top_footer li{
+            margin-top:8px;
+        }
+        #top_footer li:first-child{
+            margin-top:0px;
+        }
+        #top_footer li:nth-child(2){
+            margin-top:15px;
+        }
+        #footer_catalog{
+            left:31px;
+        }
+        #ikea_food{
+            left:268px;
+        }
+        #ikea_planner{
+            left:430px;
+        }
+        #ikea_service{
+            left:650px;
+        }
+        #customer{
+            left:850px;
+        }
+        #news{
+            left:1048px;
+        }
+        #sns{
+            position:absolute;
+            top:-26px;
+            right:7px;
+        }
+        #top_footer li:hover>a{
+            text-decoration:underline;
+        }
+        #bottom_footer{
+            height:63px;
+            background-image:url(img/bottom_footer_bg.jpg);
+            position:relative;
+        }
+        #bottom_footer>ul{
+            position:absolute;
+            top:10px;
+            left:376px;
+        }
+        #bottom_footer li{
+            float:left;
+            margin-left:52.5px;
+        }
+        #bottom_footer li:first-child{
+            margin-left:0;
+        }
+        #bottom_footer li:hover>a{
+            text-decoration:underline;
+        }
