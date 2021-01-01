@@ -279,7 +279,7 @@ detail page 共通
     font-size: 0.9em;
     padding-top: 3%;
 }
-.detail .tag{
+.detail .tag span{
     display: inline-block;
     color: #fff;
     font-size: 16px;
@@ -292,22 +292,22 @@ detail page 共通
 .detail .tag span + span{
     margin-left: 10px;
 }
-.detail .tag.design{
+.detail .tag .design{
     background: #fc7982;
 }
-.detail .tag.cording{
+.detail .tag .cording{
     background: #3e3e82;
 }
-.detail .tag.direction{
+.detail .tag .direction{
     background: #56adb5;
 }
-.detail .tag.operation{
+.detail .tag .operation{
     background: #535353;
 }
-.detail .tag.psd{
+.detail .tag .psd{
     background: #42b7e8;
 }
-.detail .tag.ai{
+.detail .tag .ai{
     background: #f78a41;
 }
 
