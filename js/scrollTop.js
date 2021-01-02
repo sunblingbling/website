@@ -4,14 +4,14 @@ $(function(){
 
   $(window).on( 'scroll', function () {
     //スクロール位置を取得
-    if ( $(this).scrollTop() < 任意の値 ) {
+    if ( $(this).scrollTop() < 50 ) {
       $pagetop.removeClass('isActive');
     } else {
       $pagetop.addClass('isActive');
     }
   });
   //ページ内リンクスムーススクロール
-  $('a[href^="#"]').on('click', function () {
+  $('a[href^="#header"]').on('click', function () {
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
     var position = target.offset().top;
