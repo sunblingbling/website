@@ -117,13 +117,18 @@
     .contents.web .list_wrap .item, 
     .item-img, 
     .contents.web .list_wrap .item, 
-    .item-info{
+    .item-info,
+    .contents.artwork .list_wrap .item, 
+    .contents.artwork .list_wrap .item-hover, 
+    .contents.artwork .list_wrap .item-hover .mask, 
+    .contents.artwork .list_wrap .item-img, 
+    .contents.artwork .list_wrap .item-info{
         width: 100%;
         height: auto;
         overflow: hidden;
         position: relative;
     }
-    .contents.web .list_wrap .item{
+    .contents.web .list_wrap .item, .contents.artwork .list_wrap .item{
         margin-right: 0;
     }
     .item .item-hover{
