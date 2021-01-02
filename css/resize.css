@@ -119,9 +119,19 @@
     .contents.web .list_wrap .item, 
     .item-info{
         width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
     }
     .contents.web .list_wrap .item{
         margin-right: 0;
+    }
+    .item .item-hover{
+        position: absolute;
+        height: 100%;
+    }
+    .item-img img{
+        clear: both;
     }
 
 /*------------------------------------
