@@ -7,9 +7,6 @@
     .sp{
         display: block;
     }
-    .display_none{
-        display: none;
-    }
     /*------------------------------------
     header
     ------------------------------------*/
@@ -34,7 +31,7 @@
     ------------------------------------*/
     .menu-trigger{
         position: absolute; 
-        top: 20px; 
+        top: 35px; 
         right: 20px; 
         width: 42px; 
         height: 34px; 
@@ -49,6 +46,9 @@
         -webkit-transform: translateY(10px) rotate(-45deg);
         transform: translateY(10px) rotate(-45deg);
         background: #fff;
+    }
+    .menu-trigger.active span:nth-child(3){
+        transform: translateY(-18px) rotate(45deg);
     }
     #nav_wrap ul{
         top: 41%;
@@ -111,7 +111,7 @@
     #main_contents{
         max-width: 100%;
         width: 100%;
-        padding-top: 40px;
+        padding-top: 35px;
     }
 
     /*------------------------------------
