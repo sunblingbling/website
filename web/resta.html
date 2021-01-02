@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.6" name="viewport">
+        <link href="URL" rel="canonical">
+        <meta content="CHOI K.SUN" name="author">
+        <title>Welcome! | CHOI K.SUN</title>
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/flickity.css">
+        <link rel="stylesheet" type="text/css" href="../css/resize.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../js/flickity.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('.menu-trigger').on('click',function(){
+                    $(this).toggleClass('active');
+                    $("#nav_wrap").fadeToggle();
+                    return false;
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-- web list page -->
+        <div class="wrap" id="web_list">
+
+            <!-- header -->
+            <header id="header">
+                <div class="logo pc"><a href="../index.html"><img src="../img/logo_pc.png" alt="logo"></a></div>
+                <div class="logo sp"><a href="../index.html"><img src="../img/logo_sp.png" alt="logo"></a></div>
+            </header>
+            <!-- header -->
+
+            <!-- nav -->
+            <nav id="nav_wrap">
+                <ul>
+                    <li><a href="web.html">WEB</a></li>
+                    <li><a href="artwork.html">ARTWORK</a></li>
+                    <li class="sns_sp sp">
+                        <span><a href="https://www.behance.net/sunblingbling/" target="_blank"><img src="../img/sns_behance_sp.png" alt="behance"></a></span>
+                        <span><a href="https://www.instagram.com/_maigo/" target="_blank"><img src="../img/sns_insta_sp.png" alt="Instagram"></a></span>
+                    </li>
+                </ul>
+            </nav>
+            <a class="menu-trigger" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <!-- nav -->
+
+            <!-- contents -->
+            <div class="contents detail">
+                <div class="wrap">
+                    <div class="tit_tag_wrap">
+                        <div class="title">タイムズ・スパ・レスタ</div>
+                        <!-- <div class="tag web_tag">
+                            <ul>
+                                <li class="direction">Direction</li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div id="gallery">
+                        <ul class="js-flickity">
+                            <li class="gallery-cell"><a href="../img/web/resta.png" target="_blank"><img src="../img/web/resta.png" alt="resta mockup"></a></li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <ul>
+                            <li><span class="des_tit">概要</span>
+                                池袋にある温浴施設のタイムズ・スパ・レスタのサイト運用を担当。<br>
+                                定期更新からサービス内容の変更によるページ改修、または季節によって変わるキャンペーンページの作成を行う。
+                            </li>
+                            <li class="url"><span class="des_tit">URL</span>
+                                <a href="http://www.timesspa-resta.jp/" target="_blank">http://www.timesspa-resta.jp/</a>
+                            </li>
+                            <li class="qr"><img src="../img/web/resta_qr.png" alt="resta QR code"></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span class="des_tit">担当ポジション</span>
+                                <span class="tag">
+                                    <span class="design">Design</span>
+                                    <span class="cording">Cording</span>
+                                    <span class="operation">Operation</span>
+                                </span>
+                            </li>
+                            <li><span class="des_tit">主な業務</span>
+                                ・サイト運用（ページ改修、定期更新）<br>
+                                ・キャンペーンページ作成
+                            </li>
+                            <li><span class="des_tit">使用ツール</span>
+                                HTML、CSS、Photoshop、Illustrator</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- contents -->
+
+            <!-- sns -->
+            <div id="sns" class="pc">
+                <ul>
+                    <li><a href="https://www.behance.net/sunblingbling/" target="_blank"><img src="../img/sns_behance.png" alt="behance"></a></li>
+                    <li><a href="https://www.instagram.com/_maigo/" target="_blank"><img src="../img/sns_insta.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <!-- sns -->
+
+            <!-- footer -->
+            <footer></footer>
+            <!-- footer -->
+        </div>
+    </body>
+</html>
