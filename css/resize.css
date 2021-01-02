@@ -177,10 +177,10 @@ detail page 共通
     }
     .detail .description{
         padding-top: 20%;
+        flex-direction: column;
     }
     .detail .description ul{
         width: 100%;
-        float: none;
     }
     .detail .description ul:first-child{
         border-right: none;
@@ -189,10 +189,17 @@ detail page 共通
     .detail .description ul:last-child{
         padding-left: 0;
     }
+    .detail .description ul li{
+        border-bottom: 1px solid #000;
+        margin-bottom: 8%;
+    }
     .detail .description ul li.qr{
-        width: 26%;
-        float: none;
-        margin: 0 auto;
+        display: none;
+    }
+    .detail .description ul:last-child li:last-child{
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     /*------------------------------------
