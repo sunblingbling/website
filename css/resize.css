@@ -2,7 +2,7 @@
 
 @media(max-width:768px){
     .pc{
-        display: none;
+        display: none !important;
     }
     .sp{
         display: block;
@@ -109,20 +109,14 @@
     /*------------------------------------
     list 共通
     ------------------------------------*/
-    .contents.web .list_wrap .item, 
-    .contents.web .list_wrap .item, 
-    .item-hover, 
-    .contents.web .list_wrap .item, 
-    .item-hover .mask, 
-    .contents.web .list_wrap .item, 
-    .item-img, 
-    .contents.web .list_wrap .item, 
-    .item-info,
-    .contents.artwork .list_wrap .item, 
-    .contents.artwork .list_wrap .item-hover, 
-    .contents.artwork .list_wrap .item-hover .mask, 
-    .contents.artwork .list_wrap .item-img, 
-    .contents.artwork .list_wrap .item-info{
+    .contents.web .list_wrap .item, .contents.web .list_wrap .item, .item-hover, .contents.web .list_wrap .item, .item-hover .mask, .contents.web .list_wrap .item, .item-img, .contents.web .list_wrap .item, .item-info,
+    .contents.artwork .list_wrap .item, .contents.artwork .list_wrap .item-hover, .contents.artwork .list_wrap .item-hover .mask, .contents.artwork .list_wrap .item-img, .contents.artwork .list_wrap .item-info,
+    .contents.artwork .list_wrap .item:nth-child(1), .contents.artwork .list_wrap .item:nth-child(1) .item-hover, .contents.artwork .list_wrap .item:nth-child(1) .item-hover .mask, .contents.artwork .list_wrap .item:nth-child(1) .item-img, .contents.artwork .list_wrap .item:nth-child(1) .item-info,
+    .contents.artwork .list_wrap .item:nth-child(2), .contents.artwork .list_wrap .item:nth-child(2) .item-hover, .contents.artwork .list_wrap .item:nth-child(2) .item-hover .mask, .contents.artwork .list_wrap .item:nth-child(2) .item-img, .contents.artwork .list_wrap .item:nth-child(2) .item-info,
+    .contents.artwork .list_wrap .item:nth-child(3), .contents.artwork .list_wrap .item:nth-child(3) .item-hover, .contents.artwork .list_wrap .item:nth-child(3) .item-hover .mask, .contents.artwork .list_wrap .item:nth-child(3) .item-img, .contents.artwork .list_wrap .item:nth-child(3) .item-info,
+    .contents.artwork .list_wrap .item:nth-child(4), .contents.artwork .list_wrap .item:nth-child(4) .item-hover, .contents.artwork .list_wrap .item:nth-child(4) .item-hover .mask, .contents.artwork .list_wrap .item:nth-child(4) .item-img, .contents.artwork .list_wrap .item:nth-child(4) .item-info,
+    .contents.artwork .list_wrap .item:nth-child(5), .contents.artwork .list_wrap .item:nth-child(5) .item-hover, .contents.artwork .list_wrap .item:nth-child(5) .item-hover .mask, .contents.artwork .list_wrap .item:nth-child(5) .item-img, .contents.artwork .list_wrap .item:nth-child(5) .item-info,
+    .contents.artwork .list_wrap .item:nth-child(6), .contents.artwork .list_wrap .item:nth-child(6) .item-hover, .contents.artwork .list_wrap .item:nth-child(6) .item-hover .mask, .contents.artwork .list_wrap .item:nth-child(6) .item-img, .contents.artwork .list_wrap .item:nth-child(6) .item-info{
         width: 100%;
         height: auto;
         overflow: hidden;
