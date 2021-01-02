@@ -51,7 +51,7 @@
         transform: translateY(-18px) rotate(45deg);
     }
     #nav_wrap ul{
-        top: 41%;
+        top: 35%;
     }
     #nav_wrap ul li a{
         font-size: 2em;
@@ -62,8 +62,9 @@
     ------------------------------------*/
     .sns_sp{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        margin-top: 80px;
     }
     .sns_sp span{
         width: 50px;
@@ -73,18 +74,18 @@
     }
     .sns_sp span img{
         width: 100%;
+        vertical-align: middle;
     }
 
     /*------------------------------------
     list page 共通
     ------------------------------------*/
     .contents{
-        width: 90%;
-        padding-top: 40px;
+        width: 94%;
     }
     .contents .title{
         font-size: 2.2em;
-        padding: 20px 0 25px;
+        padding: 30px 0;
     }
     .contents .tag{
         padding-bottom: 95px;
@@ -106,17 +107,21 @@
     }
 
     /*------------------------------------
-    Web list 共通
+    list 共通
     ------------------------------------*/
-    .list .tag ul li{
-        width: 100px;
-        height: 30px;
-        padding-top: 0;
-    }
-    .contents .list_wrap ul li{
-        float: none;
+    .contents.web .list_wrap .item, 
+    .contents.web .list_wrap .item, 
+    .item-hover, 
+    .contents.web .list_wrap .item, 
+    .item-hover .mask, 
+    .contents.web .list_wrap .item, 
+    .item-img, 
+    .contents.web .list_wrap .item, 
+    .item-info{
         width: 100%;
-        margin: 0 0 5.5% 0;
+    }
+    .contents.web .list_wrap .item{
+        margin-right: 0;
     }
 
 /*------------------------------------
