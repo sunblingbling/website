@@ -63,25 +63,16 @@
     #sns{
         position: relative;
         width: 100%;
-        height: auto;
-        padding: 30% 0 0 33%;
         box-sizing: border-box;
-        top: 0;
-        left: 0;
+    }
+    #sns ul{
+        flex-direction: row;
     }
     #sns ul li{
         position: relative;
         float: left;
         margin: 0 4%;
-        width: 12%;
-    }
-    #sns ul li:nth-child(1){
-        left: 0;
-    }
-    #sns ul li:nth-child(2){
-        top: 0;
-        left: 0;
-        width: 5%;
+        width: 60px;
     }
 
     /*------------------------------------
