@@ -60,19 +60,19 @@
     /*------------------------------------
     sns
     ------------------------------------*/
-    #sns{
-        position: relative;
+    .sns_sp{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sns_sp span{
+        width: 50px;
+    }
+    .sns_sp span + span{
+        margin-left: 30px;
+    }
+    .sns_sp span img{
         width: 100%;
-        box-sizing: border-box;
-    }
-    #sns ul{
-        flex-direction: row;
-    }
-    #sns ul li{
-        position: relative;
-        float: left;
-        margin: 0 4%;
-        width: 60px;
     }
 
     /*------------------------------------
