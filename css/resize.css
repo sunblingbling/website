@@ -78,6 +78,29 @@
     }
 
     /*------------------------------------
+    page top button
+    ------------------------------------*/
+    .ScrollTop {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #5bc8ac;
+        color: #fff;
+        text-decoration: none;
+        opacity: 0;
+        transition: all 0.65s;
+      }
+      .ScrollTop.isActive {
+        opacity: 1;
+        transition: all 0.65s;
+      }
+
+    /*------------------------------------
     list page 共通
     ------------------------------------*/
     .contents{
