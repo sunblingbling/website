@@ -190,7 +190,7 @@ detail page 共通
         padding-left: 0;
     }
     .detail .description ul li{
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #a9a9a9;
         margin-bottom: 8%;
     }
     .detail .description ul li.qr{
