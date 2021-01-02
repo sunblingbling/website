@@ -51,7 +51,7 @@
         transform: translateY(-18px) rotate(45deg);
     }
     #nav_wrap ul{
-        top: 35%;
+        top: 32%;
     }
     #nav_wrap ul li a{
         font-size: 2em;
@@ -68,6 +68,9 @@
     }
     .sns_sp span{
         width: 50px;
+    }
+    .sns_sp span:nth-child(2){
+        width: 44px;
     }
     .sns_sp span + span{
         margin-left: 30px;
@@ -152,7 +155,7 @@
     .contents.web .list_wrap .item, .contents.artwork .list_wrap .item{
         margin-right: 0;
     }
-    .item .item-hover, .list_wrap .item:nth-child(1) .item-hover, .list_wrap .item:nth-child(2) .item-hover, .list_wrap .item:nth-child(3) .item-hover, .list_wrap .item:nth-child(4) .item-hover, .list_wrap .item:nth-child(5) .item-hover, .list_wrap .item:nth-child(6) .item-hover{
+    .item .item-hover, .contents.artwork .list_wrap .item:nth-child(1) .item-hover, .contents.artwork .list_wrap .item:nth-child(2) .item-hover, .contents.artwork .list_wrap .item:nth-child(3) .item-hover, .contents.artwork .list_wrap .item:nth-child(4) .item-hover, .contents.artwork .list_wrap .item:nth-child(5) .item-hover, .contents.artwork .list_wrap .item:nth-child(6) .item-hover{
         position: absolute;
         height: 100%;
     }
