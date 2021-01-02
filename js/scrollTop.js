@@ -4,7 +4,7 @@ $(function(){
 
   $(window).on( 'scroll', function () {
     //スクロール位置を取得
-    if ( $(this).scrollTop() < 50 ) {
+    if ( $(this).scrollTop() < 80 ) {
       $pagetop.removeClass('isActive');
     } else {
       $pagetop.addClass('isActive');
