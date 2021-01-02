@@ -94,6 +94,7 @@
         text-decoration: none;
         opacity: 0;
         transition: all 0.65s;
+        z-index: 999;
       }
       .ScrollTop.isActive {
         opacity: 1;
