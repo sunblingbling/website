@@ -12,7 +12,7 @@
     ------------------------------------*/
     header{
         width: 100%;
-        padding: 10px 0 64px;
+        padding-bottom: 60px;
         border-bottom: 1px solid #000;
     }
     header.main_header{
@@ -165,9 +165,7 @@ detail page 共通
 }
     .detail .title{
         text-align: center;
-        float: none;
-        padding-right: 0;
-        padding-bottom: 5%;
+        padding-bottom: 23px;
         font-size: 2em;
     }
     .detail .tag{

@@ -201,8 +201,6 @@ detail page 共通
 }
 .detail .title{
     text-align: left;
-    float: left;
-    padding-right: 2.3%;
     padding-bottom: 0;
 }
 /* .detail .tag{
