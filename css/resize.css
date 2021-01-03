@@ -23,7 +23,7 @@
         width: 40%;
         position: absolute;
         left: 20px;
-        top: 20px;
+        top: 16px;
     }
 
     /*------------------------------------
@@ -117,13 +117,6 @@
         font-size: 2.2em;
         padding: 30px 0;
     }
-    .contents .tag{
-        padding-bottom: 95px;
-    }
-    .contents .tag ul li{
-        font-size: 1em;
-        margin: 0 3% 3% 0;
-    }
     /*------------------------------------
     main
     ------------------------------------*/
@@ -164,26 +157,6 @@
     }
 
 /*------------------------------------
-Web list page
-------------------------------------*/
-    .list .web_tag ul{
-        width: 100%;
-    }
-
-/*------------------------------------
-artwork list page
-------------------------------------*/
-    .list .artwork_tag ul{
-        width: 100%;
-    }
-    .list .artwork_tag ul li{
-        width: 110px;
-    }
-    .list .artwork_list_wrap ul li:nth-child(4){
-        position: relative;
-    }
-
-/*------------------------------------
 detail page 共通
 ------------------------------------*/
 .detail .tit_tag_wrap{
@@ -199,7 +172,7 @@ detail page 共通
     }
     .detail .tag{
         padding-top: 0;
-        padding-bottom: 20%;
+        padding-bottom: 0;
     }
     .flickity-page-dots{
         bottom: -13%;
@@ -230,16 +203,5 @@ detail page 共通
         margin-bottom: 0;
         padding-bottom: 0;
     }
-
-    /*------------------------------------
-    Web detail page
-    ------------------------------------*/
-    .detail .web_tag ul li{
-        font-size: 0.9em;
-        width: 82px;
-        height: 24px;
-        padding-top: 0px;
-    }
-
 }
 
