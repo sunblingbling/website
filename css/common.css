@@ -169,6 +169,11 @@ sns
 #sns ul li:last-child{
     margin-bottom: 0;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #sns ul li a img{
+        width: 36px;
+    }
+}
 
 /*------------------------------------
 footer
