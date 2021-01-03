@@ -198,6 +198,9 @@ detail page 共通
     .detail .description ul li.qr{
         display: none;
     }
+    .detail .description ul li:last-child{
+        padding-bottom: 8%;
+    }
     .detail .description ul:last-child li:last-child{
         border-bottom: none;
         margin-bottom: 0;
